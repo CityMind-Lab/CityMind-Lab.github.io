@@ -1,0 +1,550 @@
+/*
+Theme Name: Blogmate
+Author: Peregrine themes
+Template: bloglo
+Text Domain: blogmate
+Description: BlogMate, a child theme of Bloglo, features a boxed width design with an animated background pattern. With a horizontal blog list style, it offers extensive customization options for colors and typography. Lightweight and moderate, BlogMate is a customizable News Magazine WordPress theme with one-click demo importer. Perfect for personal and multi-author bloggers, it's ideal for dynamic news, magazines, blogs, and creative sites. SEO friendly, WPML, Gutenberg, WooCommerce, and RTL ready, it's suitable for various content publishers and online magazines. Live preview : https://demo.peregrine-themes.com/bloglo/blogmate/
+Author URI: https://peregrine-themes.com/
+Theme URI: https://peregrine-themes.com/blogmate/
+Version: 1.0.10
+Requires at least: 5.4
+Tested up to: 6.6
+Requires PHP: 5.6
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, right-sidebar, left-sidebar, footer-widgets, blog, news, entertainment, custom-background, custom-menu, custom-logo, post-formats, sticky-post, editor-style, threaded-comments, translation-ready, custom-colors, featured-images, full-width-template, theme-options, flexible-header, wide-blocks
+*/
+
+html body {
+  background-color: #fff;
+}
+
+.bloglo-blog-horizontal .bloglo-article.post.sticky {
+  outline: none;
+}
+
+.bloglo-blog-horizontal .bloglo-article.post.sticky .entry-media {
+  outline: 5px solid var(--bloglo-primary_15);
+}
+
+.widget.bloglo-entry .wp-block-image+p {
+  margin-top: 0;
+}
+
+.widget.bloglo-entry .wp-block-image figure,
+#page .widget.bloglo-entry .wp-block-image figure {
+  margin: 0 1rem 0 0;
+}
+
+#page .widget.bloglo-entry .wp-block-social-links {
+  margin-bottom: 0;
+}
+
+body.bloglo-menu-animation-squarebox:not(.bloglo-is-mobile) #bloglo-header-inner .bloglo-nav>ul>li>a {
+  padding: 0.4rem 1.4rem 0.4rem;
+}
+
+body.bloglo-blog-horizontal .bloglo-article:not(.format-quote) .entry-meta {
+  margin-top: 1.6rem;
+}
+
+body .navigation .nav-links .bloglo-animate-arrow,
+body .navigation .nav-links .page-numbers,
+body .page-links>span {
+  background-color: transparent;
+}
+
+/* Page links (pagination) - simple */
+.page-links,
+.site-content .page-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0 0.8rem;
+  margin: 4rem 0;
+}
+
+.page-links em,
+.site-content .page-links em {
+  font-size: 1.1rem;
+  font-style: normal;
+  margin-right: 0.4rem;
+  color: var(--bloglo-secondary);
+  font-weight: 500;
+}
+
+.page-links a,
+.page-links > span.post-page-numbers {
+  min-width: 2rem;
+  padding: 0.2rem 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.page-links a span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+}
+
+.page-links a:hover,
+body.using-keyboard .page-links a:focus {
+  color: var(--bloglo-primary);
+}
+
+.page-links > span.post-page-numbers.current,
+.page-links > span.post-page-numbers.current span {
+  color: var(--bloglo-primary);
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.bloglo-btn.btn-small {
+  font-size: 95% !important;
+}
+
+.entry-footer .bloglo-btn.btn-text-1 {
+  letter-spacing: 0.02rem;
+  padding: 0.8rem 2.4rem !important;
+  color: #fff;
+  background-color: var(--bloglo-primary) !important;
+}
+
+.entry-footer .bloglo-btn.btn-text-1>span::before {
+  display: none;
+}
+
+.entry-footer .bloglo-btn.btn-text-1,
+.wp-block-search .wp-block-search__button,
+body .bloglo-btn:not(.btn-text-1) {
+  line-height: 1.8;
+  border-radius: 7px !important;
+  transform: translate(0px, 0px) !important;
+  box-shadow: 0 10px 18px 0 var(--bloglo-primary_27) !important;
+  -webkit-transition: var(--bloglo-transition-primary);
+  transition: var(--bloglo-transition-primary);
+}
+
+.entry-footer .bloglo-btn.btn-text-1:active,
+.wp-block-search .wp-block-search__button:active,
+body .bloglo-btn:not(.btn-text-1):active,
+.entry-footer .bloglo-btn.btn-text-1:hover,
+.wp-block-search .wp-block-search__button:hover,
+body .bloglo-btn:not(.btn-text-1):hover {
+  color: #fff;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 10px 18px 0 var(--bloglo-primary_09) !important;
+}
+
+body .navigation .nav-links .page-numbers:not(.prev, .next).current,
+body .navigation .nav-links .page-numbers:hover button,
+body.using-keyboard .navigation .nav-links .page-numbers:focus button,
+body .navigation .nav-links .page-numbers:not(.prev, .next):hover,
+body.using-keyboard .navigation .nav-links .page-numbers:not(.prev, .next):focus,
+body .page-links a:hover span,
+body.using-keyboard .page-links a:focus span,
+body.bloglo-menu-animation-squarebox:not(.bloglo-is-mobile) #bloglo-header-inner .bloglo-nav>ul>li.current-menu-item>a,
+body.bloglo-menu-animation-squarebox:not(.bloglo-is-mobile) #bloglo-header-inner .bloglo-nav>ul>li.current_page_item>a,
+body.bloglo-menu-animation-squarebox:not(.bloglo-is-mobile) #bloglo-header-inner .bloglo-nav>ul>li>a:hover,
+body.bloglo-menu-animation-squarebox:not(.bloglo-is-mobile).using-keyboard #bloglo-header-inner .bloglo-nav>ul>li>a:focus {
+  color: #fff !important;
+  box-shadow: 0 10px 18px 0 var(--bloglo-primary_27);
+}
+
+.entry-footer .bloglo-btn.btn-text-1:active,
+.wp-block-search .wp-block-search__button:active,
+body .bloglo-btn:not(.btn-text-1):active {
+  transform: translateY(0px) !important;
+}
+
+/* Post content bg color */
+.ticker-slider-items,
+.pyml-slider-items,
+.author .author-box,
+.bloglo-sidebar-style-3 #secondary .bloglo-widget,
+.bloglo-sidebar-style-3 .elementor-widget-sidebar .bloglo-widget {
+  border-radius: 1.5rem !important;
+  box-shadow: none !important;
+  border: 0.1rem solid rgba(190, 190, 190, 0.2);
+}
+
+html:not([data-theme=dark]) .ticker-slider-items,
+html:not([data-theme=dark]) .pyml-slider-items,
+html:not([data-theme=dark]) .author .author-box,
+html:not([data-theme=dark]) .bloglo-sidebar-style-3 #secondary .bloglo-widget,
+html:not([data-theme=dark]) .bloglo-sidebar-style-3 .elementor-widget-sidebar .bloglo-widget {
+  background: #fff9f3;
+  border: 0.1rem solid #ffe7d2 !important;
+}
+
+.ticker-slider-items .ticker-title {
+  border-radius: 0.8rem;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.ticker-slider-controls .ticker-slider-pause {
+  border-radius: 0.8rem;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.bloglo-sidebar-style-3.is-section-heading-init-s2 #secondary .bloglo-widget {
+  position: relative;
+  margin-bottom: 4.5rem;
+}
+
+.is-section-heading-init-s2 #pyml .pyml-slider-items .widget-title,
+.bloglo-sidebar-style-3.is-section-heading-init-s2 #secondary .bloglo-widget .widget-title,
+.bloglo-sidebar-style-3.is-section-heading-init-s2 #secondary .bloglo-widget .wp-block-search .wp-block-search__label,
+.bloglo-sidebar-style-3.is-section-heading-init-s2 #secondary .bloglo-widget .wp-block-heading {
+  position: absolute;
+  left: 2.5rem;
+  top: -1.8rem;
+  z-index: 2;
+}
+
+.is-section-heading-init-s2 #featured_links .widget-title,
+.is-section-heading-init-s2 #pyml .pyml-slider-items .widget-title,
+.is-footer-heading-init-s2 #bloglo-footer .wp-block-heading,
+.is-footer-heading-init-s2 #bloglo-footer .widget-title,
+.is-section-heading-init-s2:not(.bloglo-sidebar-style-1) #secondary .bloglo-widget .widget-title,
+.is-section-heading-init-s2:not(.bloglo-sidebar-style-1) #secondary .bloglo-widget .wp-block-search .wp-block-search__label,
+.is-section-heading-init-s2:not(.bloglo-sidebar-style-1) #secondary .bloglo-widget .wp-block-heading {
+  letter-spacing: 0.25px;
+  width: auto;
+  line-height: 1.2;
+  display: inline-block;
+  padding: 8px 25px 7px;
+  background-color: #fff;
+  border-radius: 10rem;
+  margin-bottom: 0;
+  border: 1px solid rgba(39, 39, 39, 0.75);
+}
+
+html[data-theme="dark"] .is-section-heading-init-s2 #featured_links .widget-title,
+html[data-theme="dark"] .is-footer-heading-init-s2 #bloglo-footer .wp-block-heading,
+html[data-theme="dark"] .is-footer-heading-init-s2 #bloglo-footer .widget-title,
+html[data-theme="dark"] .is-section-heading-init-s2 #pyml .pyml-slider-items .widget-title,
+html[data-theme="dark"] .is-section-heading-init-s2:not(.bloglo-sidebar-style-1) #secondary .bloglo-widget .widget-title,
+html[data-theme="dark"] .is-section-heading-init-s2:not(.bloglo-sidebar-style-1) #secondary .bloglo-widget .wp-block-search .wp-block-search__label,
+html[data-theme="dark"] .is-section-heading-init-s2:not(.bloglo-sidebar-style-1) #secondary .bloglo-widget .wp-block-heading {
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 0.1rem solid rgba(190, 190, 190, 0.3);
+}
+
+.is-section-heading-init-s2:not(.bloglo-sidebar-style-1) #secondary .bloglo-widget .wp-block-search .wp-block-search__inside-wrapper {
+  padding-top: 2.2rem;
+}
+
+.is-section-heading-init-s2 #pyml .pyml-slider-items {
+  position: relative;
+}
+
+.is-section-heading-init-s2 #pyml .pyml-slider-items .widget-title+.bloglo-flex-row.gy-4 {
+  margin-top: 0;
+}
+
+/* Header: bottom line only */
+#bloglo-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+html[data-theme="dark"] #bloglo-header {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Custom CSS */
+
+.bloglo-blog-horizontal .bloglo-flex-row.g-4 {
+  --bloglo-gutter-y: 4.8rem;
+  --bloglo-gutter-x: 4.8rem;
+}
+
+.bloglo-blog-horizontal .bloglo-article:not(.format-quote) .bloglo-blog-entry-wrapper.bloglo-thumb-left .entry-media {
+  border-radius: 0.8rem;
+}
+
+body .pyml-slide-item .pyml-slider-backgrounds .pyml-slide-bg,
+body .wp-block-latest-posts__featured-image {
+  border: 0.1rem solid rgba(39, 39, 39, 0.75);
+  border-radius: 0.8rem;
+  box-shadow: 2px 2px 3px 0px rgba(93, 112, 234, 0.1);
+}
+
+.pyml-slider-items {
+  padding: 2.2rem;
+}
+
+.bloglo-waves-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bloglo-waves-wrapper .circle,
+.bloglo-waves-wrapper .triangle,
+.bloglo-waves-wrapper .square {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 40px;
+  background: var(--bloglo-primary_15);
+  border-radius: 5px;
+  opacity: 0.1;
+  animation: rise 10s infinite ease-in;
+}
+
+.bloglo-waves-wrapper .square:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 10%;
+  animation-duration: 8s;
+}
+
+.bloglo-waves-wrapper .square:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  left: 20%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.bloglo-waves-wrapper .square:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  left: 35%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+
+.bloglo-waves-wrapper .square:nth-child(4) {
+  width: 80px;
+  height: 80px;
+  left: 50%;
+  animation-duration: 11s;
+  animation-delay: 0s;
+}
+
+.bloglo-waves-wrapper .square:nth-child(5) {
+  width: 35px;
+  height: 35px;
+  left: 55%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+}
+
+.bloglo-waves-wrapper .square:nth-child(6) {
+  width: 45px;
+  height: 45px;
+  left: 65%;
+  animation-duration: 8s;
+  animation-delay: 3s;
+}
+
+.bloglo-waves-wrapper .square:nth-child(7) {
+  width: 90px;
+  height: 90px;
+  left: 70%;
+  animation-duration: 12s;
+  animation-delay: 2s;
+}
+
+.bloglo-waves-wrapper .square:nth-child(8) {
+  width: 25px;
+  height: 25px;
+  left: 80%;
+  animation-duration: 6s;
+  animation-delay: 2s;
+}
+
+.bloglo-waves-wrapper .square:nth-child(9) {
+  width: 15px;
+  height: 15px;
+  left: 70%;
+  animation-duration: 5s;
+  animation-delay: 1s;
+}
+
+.bloglo-waves-wrapper .square:nth-child(10) {
+  width: 90px;
+  height: 90px;
+  left: 25%;
+  animation-duration: 10s;
+  animation-delay: 4s;
+}
+
+.bloglo-waves-wrapper .triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.bloglo-waves-wrapper .triangle:nth-child(1) {
+  width: 20px;
+  height: 22px;
+  left: 50%;
+  animation-delay: 0s;
+}
+
+.bloglo-waves-wrapper .triangle:nth-child(2) {
+  width: 30px;
+  height: 28px;
+  left: 25%;
+  animation-delay: 12s;
+}
+
+.bloglo-waves-wrapper .triangle:nth-child(3) {
+  width: 30px;
+  height: 28px;
+  left: 80%;
+  animation-delay: 4s;
+}
+
+.bloglo-waves-wrapper .triangle:nth-child(4) {
+  width: 40px;
+  height: 38px;
+  left: 30%;
+  animation-delay: 18s;
+}
+
+.bloglo-waves-wrapper .triangle:nth-child(5) {
+  width: 50px;
+  height: 40px;
+  left: 70%;
+  animation-delay: 1s;
+}
+
+.bloglo-waves-wrapper .circle {
+  border-radius: 100%;
+}
+
+.bloglo-waves-wrapper .circle:nth-child(1) {
+  width: 22px;
+  height: 20px;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.bloglo-waves-wrapper .circle:nth-child(2) {
+  width: 84px;
+  height: 80px;
+  left: 45%;
+  animation-delay: 12s;
+}
+
+.bloglo-waves-wrapper .circle:nth-child(3) {
+  width: 53px;
+  height: 50px;
+  left: 90%;
+  animation-delay: 4s;
+}
+
+.bloglo-waves-wrapper .circle:nth-child(4) {
+  width: 53px;
+  height: 50px;
+  left: 60%;
+  animation-delay: 18s;
+}
+
+.bloglo-waves-wrapper .circle:nth-child(5) {
+  width: 43px;
+  height: 40px;
+  left: 90%;
+  animation-delay: 1s;
+}
+
+
+@keyframes rise {
+  0% {
+      bottom: -100px;
+      transform: translateX(0) rotate(0deg);
+  }
+
+  50% {
+      transform: translate(100px) rotate(180deg);
+  }
+
+  100% {
+      bottom: 1080px;
+      transform: translateX(-200px) rotate(360deg);
+  }
+}
+
+/* Dynamic CSS */
+[data-theme=dark] .bloglo-breadcrumbs {
+  background-color: transparent;
+  border-color: rgba(190, 190, 190, 0.3);
+}
+
+html[data-theme="dark"] .bloglo-sidebar-style-3 #secondary .bloglo-widget {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Block CSS */
+
+.content-area .wp-block-site-title a:not(:hover, :focus) {
+  color: inherit;
+}
+
+.content-area .wp-block-site-title a:not(.bloglo-btn):not(.wp-block-button__link):hover,
+.content-area .wp-block-site-title a:not(.bloglo-btn):not(.wp-block-button__link):focus {
+  color: var(--bloglo-primary);
+}
+
+.single .entry-content .wp-block-avatar img {
+  margin: 0;
+}
+
+.wp-block-navigation .wp-block-page-list {
+  margin: 0;
+}
+
+.content-area .bloglo-entry .wp-block-navigation:where(:not([class*=has-text-decoration])) a,
+.wp-block-navigation:where(:not([class*=has-text-decoration])) a {
+  text-decoration: none;
+}
+
+.wp-block-navigation .has-child .wp-block-navigation__submenu-container {
+  list-style: none;
+  margin: 0;
+}
+
+.wp-block-navigation .wp-block-page-list > .wp-block-navigation-item:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.wp-block-file {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wp-block-file a:not(.wp-block-file__button) {
+  font-weight: 700;
+}
+
+#page #main .wp-block-cover .wp-block-cover-text a,
+#page #main :where(.wp-block-cover-image:not(.has-text-color)),
+#page #main :where(.wp-block-cover:not(.has-text-color)) {
+  color: #fff;
+}
+
+.post-category a:hover,
+.post-category a:focus {
+  text-decoration: underline;
+}
+
+.wp-block-categories-dropdown.wp-block-categories {
+  margin-top: 16px;
+}

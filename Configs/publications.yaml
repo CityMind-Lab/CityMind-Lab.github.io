@@ -1,0 +1,1262 @@
+# Publications list. Edit this file; page loads it and renders automatically.
+# Schema: title, authors, venue (e.g. "TPAMI 2026" or "KDD 2026"), year (int or "before2020"),
+#         is_journal (true=blue venue, false=red), categories (list, see below), image, link? (paper URL, used on title)
+# categories: use at least one of [stm, time-series, multimodal, graph, survey, others]. Papers appear in the matching tab (e.g. stm -> Spatio-Temporal Data Mining). Same year, same category: journals (is_journal: true) are shown first.
+
+- title: 'NuwaDynamics+: A Causality-Aware Generative Framework for Spatio-Temporal Representation Learning'
+  authors: Kun Wang, Yifan Duan, Hao Wu, Jian Zhao, Kai Wang, Zhengyang Zhou, Yuxuan Liang, Xu Wang*, Yang Wang*, Yu Zheng, Xuelong Li
+  venue: TPAMI 2026
+  year: 2026
+  is_journal: true
+  categories:
+  - stm
+  image: /imgs/publications/2026-KDD-fast-efficient-and-effective.jpg
+  link: ''
+- title: 'FaST: Efficient and Effective Long-Horizon Forecasting for Large-Scale Spatial-Temporal Graphs via Mixture-of-Experts'
+  authors: Yiji Zhao, Zihao Zhong, Ao Wang, Haomin Wen, Ming Jin, Yuxuan Liang, Huaiyu Wan, Hao Wu
+  venue: KDD 2026
+  year: 2026
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2026-KDD-fast-efficient-and-effective.jpg
+  link: ''
+- title: How to Train Your Mamba for Time Series Forecasting
+  authors: Jiaxi Hu, Disen Lan, Ziyu Zhou, Gefeng Luo, Qingsong Wen, Yuxuan Liang*
+  venue: KDD 2026
+  year: 2026
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2026-KDD-how-to-train-your.jpg
+  link: ''
+- title: 'OccamVTS: Distilling Vision Models to 1% Parameters for Time Series Forecasting'
+  authors: Sisuo Lyu, Siru Zhong, Weilin Ruan, Qingxiang Liu, Qingsong Wen, Hui Xiong, Yuxuan Liang*
+  venue: AAAI 2026
+  year: 2026
+  is_journal: false
+  categories:
+  - time-series
+  - multimodal
+  image: /imgs/publications/2026-AAAI-occamvts-distilling-vision-mod.png
+  link: ''
+- title: Revitalizing Canonical Pre-Alignment for Irregular Multivariate Time Series Forecasting
+  authors: Ziyu Zhou, Yiming Huang, Yanyun Wang, Yuankai Wu, James Kwok*, Yuxuan Liang*
+  venue: AAAI 2026
+  year: 2026
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2026-AAAI-revitalizing-canonical-pre-ali.png
+  link: ''
+- title: A Retrieval Augmented Spatio-Temporal Framework for Traffic Prediction
+  authors: Weilin Ruan, Xilin Dang, Ziyu Zhou, Sisuo Lyu, Yuxuan Liang*
+  venue: AAAI 2026
+  year: 2026
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2026-ICDE-damba-st-domain-adaptive-mamba.png
+  link: ''
+- title: 'Damba-ST: Domain-Adaptive Mamba for Efficient Urban Spatio-Temporal Prediction'
+  authors: Rui An, Yifeng Zhang, Ziran Liang, Wenqi Fan, Yuxuan Liang, Xuequn Shang, Qing Li
+  venue: ICDE 2026
+  year: 2026
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2025-WCSP-bayesian-driven-graph-reasonin.png
+  link: ''
+- title: Bayesian-Driven Graph Reasoning for Active Radio Map Construction
+  authors: 'Wenlihan Lu, Shijian Gao, Miaowen Wen, Yuxuan Liang, Liuqing Yang, Chan-Byoung Chae, H Vincent Poor'
+  venue: WCSP 2025
+  year: 2025
+  is_journal: true
+  categories:
+  - graph
+  image: /imgs/publications/2025-WCSP-bayesian-driven-graph-reasonin.png
+  link: ''
+- title: 'Cross Space and Time: A Spatio-Temporal Unitized Model for Traffic Flow Forecasting'
+  authors: 'Weilin Ruan, Wenzhuo Wang, Siru Zhong, Wei Chen, Li Liu, Yuxuan Liang*'
+  venue: TITS 2025
+  year: 2025
+  is_journal: true
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2025-NeurIPS-neurips-2025-db-track.png
+  link: ''
+- title: Learning to Factorize Spatio-Temporal Foundation Models
+  authors: 'Siru Zhong, Junjie Qiu, Yangyu Wu, Xingchen Zou, Zhongwen Rao, Bin Yang, Chenjuan Guo, Hao Xu*, Yuxuan Liang*'
+  venue: NeurIPS 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2025-ECML-PKDD-st-lora-low-rank-adaptation-fo.png
+  link: ''
+- title: 'UniTraj: Learning a Universal Trajectory Foundation Model from Billion-Scale Worldwide Traces'
+  authors: 'Yuanshao Zhu, James Jianqiao Yu*, Xiangyu Zhao*, Xun Zhou, Liang Han, Xuetao Wei, Yuxuan Liang*'
+  venue: NeurIPS 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-IJGIS-a-tensor-decomposition-method.png
+  link: ''
+- title: 'FlowNet: Modeling Dynamic Spatio-Temporal Systems via Flow Propagation'
+  authors: 'Yutong Feng, Xu Liu, Yutong Xia, Yuxuan Liang*'
+  venue: NeurIPS 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2024-InfoFusion-deep-learning-for-cross-domain.png
+  link: ''
+- title: Improving Bilinear RNN with Closed-loop Control
+  authors: 'Jiaxi Hu, Yongqi Pan, Jusen Du, Disen Lan, Xiaqiang Tang, Qingsong Wen, Yuxuan Liang*, Weigao Sun*'
+  venue: NeurIPS 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2024-TKDE-a-survey-on-service.png
+  link: ''
+- title: 'Learning with Calibration: Exploring Test-Time Computing of Spatio-Temporal Forecasting'
+  authors: 'Wei Chen, Yuxuan Liang*'
+  venue: NeurIPS 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2024-TKDE-modeling-spatio-temporal-dynam.png
+  link: ''
+- title: 'ShapeX: Shapelet-Driven Post Hoc Explanations for Time Series Classification Models'
+  authors: 'Bosong Huang, Ming Jin, Yuxuan Liang, Johan Barthelemy, Debo Cheng, Qingsong Wen, Chenghao Liu, Shirui Pan'
+  venue: NeurIPS 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2024-TPAMI-self-supervised-learning-for-t.png
+  link: ''
+- title: 'Recognition through Reasoning: Reinforcing Image Geo-localization with Large Vision-Language Models'
+  authors: 'Ling Li, Yao Zhou, Yuxuan Liang, Fugee Tsung, Jiaheng Wei'
+  venue: NeurIPS 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - multimodal
+  image: /imgs/publications/2024-TRC-semantic-fused-multi-granulari.png
+  link: ''
+- title: 'Aeolus: A Multi-structural Flight Delay Dataset'
+  authors: 'Lin Xu, Xinyun Yuan, Yuxuan Liang, Suwan Yin, Yuankai Wu'
+  venue: NeurIPS 2025 (DB Track)
+  year: 2025
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2024-TKDE-on-regularization-for-explaini.png
+  link: ''
+- title: 'Not All Data are Good Labels: On the Self-supervised Labeling for Time Series Forecasting'
+  authors: 'Yuxuan Yang, Dalin Zhang, Yuxuan Liang, Hua Lu, Gang Chen, Huan Li'
+  venue: NeurIPS 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2024-SIGSPATIAL-improving-generalization-of-dy.png
+  link: ''
+- title: 'ST-LoRA: Low-rank Adaptation for Spatio-Temporal Forecasting'
+  authors: 'Weilin Ruan, Wei Chen, Xilin Dang, Jianxiang Zhou, Weichuang Li, Xu Liu, Yuxuan Liang*'
+  venue: ECML-PKDD 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2024-KDD-foundation-models-for-time.png
+  link: ''
+- title: Towards Multi-Scenario Forecasting of Building Electricity Loads with Multimodal Data
+  authors: 'Yongzheng Liu, Siru Zhong, Gefeng Luo, Weilin Ruan, Yuxuan Liang*'
+  venue: MM 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - multimodal
+  - time-series
+  image: /imgs/publications/2024-ECML-PKDD-paper.png
+  link: ''
+- title: 'Test-Time Graph Rebirth: Serving GNN Generalization Under Distribution Shifts'
+  authors: 'Xin Zheng, Yu Zheng, Qin Zhang, Haishuai Wang, Yuxuan Liang, Alan Wee-Chung Liew, Shirui Pan'
+  venue: ICDM 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-KDD-the-heterophily-snowflake-hypo.png
+  link: ''
+- title: Space-aware Socioeconomic Indicator Inference with Heterogeneous Graphs
+  authors: 'Xingchen Zou, Jiani Huang, Xixuan Hao, Yuhao Yang, Haomin Wen, Yibo Yan, Chao Huang, Chao Chen, Yuxuan Liang*'
+  venue: SIGSPATIAL 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-KDD-controltraj-controllable-traje.png
+  link: ''
+- title: 'Fine-grained Urban Heat Island Effect Forecasting: A Context-aware Thermodynamic Modeling Framework'
+  authors: 'Xingchen Zou, Weilin Ruan, Siru Zhong, Yuehong Hu, Yuxuan Liang*'
+  venue: KDD 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-KDD-cluster-wide-task-slowdown-det.png
+  link: ''
+- title: Learning Generalized and Flexible Trajectory Models from Omni-Semantic Supervision
+  authors: 'Yuanshao Zhu, James Jianqiao Yu*, Xiangyu Zhao*, Xiao Han, Qidong Liu, Xuetao Wei, Yuxuan Liang*'
+  venue: KDD 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-KDD-the-snowflake-hypothesis-train.png
+  link: ''
+- title: 'Efficient Large-Scale Traffic Forecasting with Transformers: A Spatial Data Management Perspective'
+  authors: 'Yuchen Fang, Yuxuan Liang, Bo Hui, Zezhi Shao, Liwei Deng, Xu Liu, Xinke Jiang, Kai Zheng'
+  venue: KDD 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2024-InfoFusion-deep-learning-for-cross-domain.png
+  link: ''
+- title: 'DynST: Dynamic Sparse Training for Resource-Constrained Spatio-Temporal Forecasting'
+  authors: 'Hao Wu, Haomin Wen, Guibin Zhang, Yutong Xia, Yuxuan Liang, Yu Zheng, Qingsong Wen, Kun Wang'
+  venue: KDD 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2024-TKDE-a-survey-on-service.png
+  link: ''
+- title: 'Foundation Models for Spatio-Temporal Data Science: A Tutorial and Survey'
+  authors: 'Yuxuan Liang, Haomin Wen, Yutong Xia, Ming Jin, Bin Yang, Flora Salim, Qingsong Wen, Shirui Pan, Gao Cong'
+  venue: KDD 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - survey
+  - time-series
+  image: /imgs/publications/2024-ICML-position-paper-what-can.png
+  link: https://arxiv.org/abs/2503.13502
+- title: 'Moirai-MoE: Empowering Time Series Foundation Models with Sparse Mixture of Experts'
+  authors: 'Xu Liu, Juncheng Liu, Gerald Woo, Taha Aksu, Yuxuan Liang, Roger Zimmermann, Chenghao Liu, Silvio Savarese, Caiming Xiong, Doyen Sahoo'
+  venue: ICML 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2024-KDD-lade-the-first-comprehensive.png
+  link: https://arxiv.org/abs/2410.10469
+- title: 'Time-VLM: Exploring Multimodal Vision-Language Models for Augmented Time Series Forecasting'
+  authors: 'Siru Zhong, Weilin Ruan, Ming Jin, Huan Li, Qingsong Wen, Yuxuan Liang*'
+  venue: ICML 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - time-series
+  - multimodal
+  image: /imgs/publications/2024-ICML-two-heads-are-better.png
+  link: https://arxiv.org/abs/2502.04395
+- title: Reinforcement learning for hybrid charging stations planning and operation considering fixed and mobile chargers
+  authors: 'Yanchen Zhu, Honghui Zou, Yuyu Luo, Yuankai Wu, Yuxuan Liang*'
+  venue: IJCAI 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2024-ICML-navigating-complexity-toward-l.png
+  link: ''
+- title: 'Nature Makes No Leaps: Building Continuous Location Embeddings with Satellite Imagery from the Web'
+  authors: 'Xixuan Hao, Wei Chen, Xingchen Zou, Yuxuan Liang*'
+  venue: WWW 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - multimodal
+  image: /imgs/publications/2024-IJCAI-predicting-parking-availabilit.png
+  link: ''
+- title: 'Deep Learning for Multivariate Time Series Imputation: A Survey'
+  authors: 'Jun Wang, Wenjie Du, Yiyuan Yang, Linglong Qian, Wei Cao, Keli Zhang, Wenjia Wang, Yuxuan Liang, Qingsong Wen'
+  venue: IJCAI 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - time-series
+  - survey
+  image: /imgs/publications/2024-IJCAI-spatio-temporal-field-neural-n.png
+  link: ''
+- title: 'AdaMove: Efficient Test-Time Adaptation for Human Mobility Prediction'
+  authors: 'Huaxu Han, Shuliang Wang, Sijie Ruan*, Qianyu Yang, Yuxuan Liang, Ziqiang Yuan, Cheng Long, Hanning Yuan, Yu Zheng'
+  venue: ICDE 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-IJCAI-towards-robust-trajectory-repr.png
+  link: ''
+- title: 'JointDistill: Adaptive Multi-Task Distillation for Joint Depth Estimation and Scene Segmentation'
+  authors: 'Tiancong Cheng, Ying Zhang, Yuxuan Liang, Roger Zimmermann, Zhiwen Yu, Bin Guo'
+  venue: ICME 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - multimodal
+  image: /imgs/publications/2024-ICDE-learning-multi-pattern-normali.png
+  link: ''
+- title: 'Expand and Compress: Exploring TuningPrinciples for Continual Spatio-Temporal GraphForecasting'
+  authors: 'Wei Chen, Yuxuan Liang*'
+  venue: ICLR 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2024-WWW-urbanclip-learning-text-enhanc.jpg
+  link: ''
+- title: 'Open-CK: A Large Multi-Physics Fields Coupling benchmarks in Combustion Kinetics'
+  authors: 'Zaige Fei, Fan Xu, Junyuan Mao, Yuxuan Liang, Qingsong Wen, Kun Wang, Hao Wu, Yang Wang'
+  venue: ICLR 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2024-WWW-unitime-a-language-empowered-u.jpg
+  link: ''
+- title: Air Quality Prediction with Physics-Informed Dual Neural ODEs in Open Systems
+  authors: 'Jingdong Tian, Yuxuan Liang, Ronghui Xu, Peng Chen, Chenjuan Guo, Aoying Zhou, Lujia Pan, Zhongwen Rao, Bin Yang'
+  venue: ICLR 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2024-WWW-cola-cross-city-mobility-trans.jpg
+  link: ''
+- title: Towards Neural Scaling Laws for Time Series Foundation Models
+  authors: 'Qingren Yao, Chao-Han Huck Yang, Renhe Jiang, Yuxuan Liang, Ming Jin, Shirui Pan'
+  venue: ICLR 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2024-ICLR-nuwadynamics-discovering-and-u.jpg
+  link: ''
+- title: 'AirRadar: Inferring Nationwide Air Quality in China with Deep Neural Networks'
+  authors: 'Qiongyan Wang, Yutong Xia, Siru Zhong, Weichuang Li, Yuankai Wu, Shifen Cheng, Junbo Zhang, Yu Zheng, Yuxuan Liang*'
+  venue: AAAI 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-IJCAI-spatio-temporal-field-neural-n.png
+  link: ''
+- title: 'UrbanVLP: A Multi-Granularity Vision-Language Pre-Trained Foundation Model for Urban Indicator Prediction'
+  authors: 'Xixuan Hao, Wei Chen, Yibo Yan, Siru Zhong, Kun Wang, Qingsong Wen, Yuxuan Liang*'
+  venue: AAAI 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - multimodal
+  - stm
+  image: /imgs/publications/2024-ICML-navigating-complexity-toward-l.png
+  link: ''
+- title: Unlocking the Power of LSTM for Long Term Time Series Forecasting
+  authors: 'Yaxuan Kong, Zepu Wang, Yuqi Nie, Tian Zhou, Stefan Zohren, Yuxuan Liang, Peng Sun*, Qingsong Wen'
+  venue: AAAI 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2024-ICML-two-heads-are-better.png
+  link: ''
+- title: 'Through the Dual-Prism: A Spectral Perspective on Graph Data Augmentation for Graph Classification'
+  authors: 'Yutong Xia, Runpeng Yu, Yuxuan Liang*, Xavier Bresson, Xinchao Wang*, Roger Zimmermann'
+  venue: AAAI 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-KDD-lade-the-first-comprehensive.png
+  link: ''
+- title: 'UniTR: A Unified Framework for Joint Representation Learning of Trajectories and Road Networks'
+  authors: 'Jie Zhao, Chao Chen, Yuanshao Zhu, Mingyu Deng, Yuxuan Liang'
+  venue: AAAI 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2024-ICLR-graph-lottery-ticket-automated.png
+  link: ''
+- title: 'Personalized Federated Learning for Spatio-Temporal Forecasting: A Dual Semantic Alignment-Based Contrastive Approach'
+  authors: 'Qingxiang Liu, Sheng Sun, Yuxuan Liang, Jingjing Xue, Min Liu'
+  venue: AAAI 2025
+  year: 2025
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2024-ICLR-time-llm-time-series-forecasti.png
+  link: ''
+- title: A tensor decomposition method based on embedded geographic meta-knowledge for urban traffic flow imputation
+  authors: 'Xiaoyue Luo, Shifen Cheng, Lizeng Wang, Yuxuan Liang, Feng Lu'
+  venue: IJGIS 2024
+  year: 2024
+  is_journal: true
+  categories:
+  - stm
+  image: /imgs/publications/2024-AAAI-earthfarseer-versatile-spatio-.png
+  link: ''
+- title: 'Deep learning for cross-domain data fusion in urban computing: Taxonomy, advances, and outlook'
+  authors: 'Xingchen Zou, Yibo Yan, Xixuan Hao, Yuehong Hu, Haomin Wen, Erdong Liu, Junbo Zhang, Yong Li, Tianrui Li, Yu Zheng, Yuxuan Liang*'
+  venue: InfoFusion 2024
+  year: 2024
+  is_journal: true
+  categories:
+  - multimodal
+  - survey
+  image: /imgs/publications/2024-AAAI-msgnet-learning-multi-scale-in.jpg
+  link: https://arxiv.org/abs/2402.19348
+- title: 'A Survey on Service Route and Time Prediction in Instant Delivery: Taxonomy, Progress, and Prospects'
+  authors: 'Haomin Wen, Youfang Lin, Lixia Wu, Xiaowei Mao, Tianyue Cai, Yunfeng Hou, Shengnan Guo, Yuxuan Liang, Guangyin Jin, Yiji Zhao, Roger Zimmermann, Jieping Ye, Huaiyu Wan'
+  venue: TKDE 2024
+  year: 2024
+  is_journal: true
+  categories:
+  - survey
+  - stm
+  image: /imgs/publications/2024-AAAI-sencr-a-span-enhanced.jpg
+  link: https://arxiv.org/abs/2309.01194
+- title: Modeling Spatio-temporal Dynamical Systems with Neural Discrete Learning and Levels-of-Experts
+  authors: 'Kun Wang, Hao Wu, Guibin Zhang, Junfeng Fang, Yuxuan Liang*, Yuankai Wu, Roger Zimmermann, Yang Wang*'
+  venue: TKDE 2024
+  year: 2024
+  is_journal: true
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2024-ICDE-urban-sensing-for-multi-destin.jpg
+  link: https://www.arxiv.org/abs/2402.05970
+- title: 'Self-supervised learning for time series analysis: Taxonomy, progress, and prospects'
+  authors: 'Kexin Zhang, Qingsong Wen, Chaoli Zhang, Rongyao Cai, Ming Jin, Yong Liu, James Zhang, Yuxuan Liang, Guansong Pang, Dongjin Song, Shirui Pan'
+  venue: TPAMI 2024
+  year: 2024
+  is_journal: true
+  categories:
+  - time-series
+  - survey
+  image: /imgs/publications/2024-WSDM-citycan-causal-attention-netwo.jpg
+  link: https://arxiv.org/abs/2306.10125
+- title: Semantic-fused multi-granularity cross-city traffic prediction
+  authors: 'Kehua Chen, Yuxuan Liang, Jindong Han, Siyuan Feng, Meixin Zhu, Hai Yang'
+  venue: TRC 2024
+  year: 2024
+  is_journal: true
+  categories:
+  - stm
+  image: /imgs/publications/2024-ICASSP-fall-prediction-by-a.jpg
+  link: https://arxiv.org/abs/2302.11774
+- title: 'On regularization for explaining graph neural networks: An information theory perspective'
+  authors: 'Junfeng Fan, Guibin Zhang, Kun Wang, Wenjie Du, Yifan Duan, Yuankai Wu, Roger Zimmermann, Xiaowen Chu, Yuxuan Liang*'
+  venue: TKDE 2024
+  year: 2024
+  is_journal: true
+  categories:
+  - graph
+  image: /imgs/publications/2023-TKDE-spatio-temporal-graph-neural-n.png
+  link: https://ieeexplore.ieee.org/abstract/document/10582518?casa_token=iUT5LUYlvtoAAAAA:1ZTJugp1sm80cE1J9LMOBDIPVc7OdENVbZcSnkKwCT_qhE35V5w5tHp-hEpc_r-KVlTs3Qgsk5QQ
+- title: 'Terra: A Multimodal Spatio-Temporal Dataset Spanning the Earth'
+  authors: 'Wei Chen, Xixuan Hao, Yuankai Wu, Yuxuan Liang*'
+  venue: NeurIPS 2024 (Datasets and Benchmarks Track)
+  year: 2024
+  is_journal: false
+  categories:
+  - multimodal
+  - stm
+  image: /imgs/publications/2025-WCSP-bayesian-driven-graph-reasonin.png
+  link: ''
+- title: 'Time-FFM: Towards LM-Empowered Federated Foundation Model for Time Series Forcasting'
+  authors: 'Qiangxiang Liu, Xu Liu, Chenghao Liu, Qingsong Wen, Yuxuan Liang*'
+  venue: NeurIPS 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2025-ECML-PKDD-st-lora-low-rank-adaptation-fo.png
+  link: https://arxiv.org/pdf/2405.14252
+- title: 'Attractor memory for long-term time series forecasting: A chaos perspective'
+  authors: 'Jaxi Hu, Yuehong Hu, Wei Chen, Ming Jin, Shirui Pan, Qingsong Wen, Yuxuan Liang*'
+  venue: NeurIPS 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2026-ICDE-damba-st-domain-adaptive-mamba.png
+  link: https://arxiv.org/pdf/2402.11463
+- title: 'GDeR: Safeguarding Efficiency, Balancing, and Robustness via Prototypical Graph Pruning'
+  authors: 'Guibin Zhang, Haonan Dong, Yuchen Zhang, Zhixun Li, Dingshuo Chen, Kai Wang, Tianlong Chen, Yuxuan Liang, Dawei Cheng, Kun Wang'
+  venue: NeurIPS 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-IJGIS-a-tensor-decomposition-method.png
+  link: ''
+- title: Improving Generalization of Dynamic Graph Learning via Environment Prompt
+  authors: 'Kuo Yang, Zhengyang Zhou, Qihe Huang, Limin Li, Yuxuan Liang, Yang Wang'
+  venue: NeurIPS 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-TPAMI-self-supervised-learning-for-t.png
+  link: ''
+- title: Towards unifying diffusion models for probabilistic spatio-temporal graph learning
+  authors: 'Junfeng Hu, Xu Liu, Zhencheng Fan, Yuxuan Liang*, Roger Zimmermann'
+  venue: SIGSPATIAL 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2023-TNSM-end-to-end-delay-modeling-via.png
+  link: ''
+- title: 'UrbanCross: Enhancing Satellite Image-Text Retrieval with Cross-Domain Adaptation'
+  authors: 'Siru Zhong, Yuxuan Liang, Yibo Yan, Ying Zhang, Yangqiu Song, Yuxuan Liang*'
+  venue: ACM MM 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - multimodal
+  image: /imgs/publications/2023-NeurIPS-deciphering-spatio-temporal-gr.png
+  link: https://arxiv.org/pdf/2404.14241
+- title: 'Foundation models for time series analysis: A tutorial and survey'
+  authors: 'Yuxuan Liang, Haomin Wen, Yuqi Nie, Yushan Jiang, Ming Jin, Dongjin Song, Shirui Pan, Qingsong Wen*'
+  venue: KDD 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - time-series
+  - survey
+  image: /imgs/publications/2023-NeurIPS-largest-a-benchmark-dataset.png
+  link: https://arxiv.org/pdf/2403.14735
+- title: Reinventing Node-Centric Traffic Forecasting for Improved Accuracy and Efficiency
+  authors: 'Xu Liu, Yuxuan Liang*, Chao Huang, Hengchang Hu, Yushi Cao, Bryan Hooi, Roger Zimmermann'
+  venue: ECML-PKDD 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2023-SIGSPATIAL-diffstg-probabilistic-spatio-t.png
+  link: ''
+- title: 'The Heterophily Snowflake Hypothesis: Training and Empowering GNN for Heterophilic Graphs'
+  authors: 'Kun Wang, Guohao Li, Shilong Wang, Guibin Zhang, Kai Wang, Yang You, Xiaojiang Peng, Yuxuan Liang*, Yang Wang*'
+  venue: KDD 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2023-TNSM-end-to-end-delay-modeling-via.png
+  link: https://arxiv.org/abs/2406.12539
+- title: 'Controltraj: Controllable trajectory generation with topology-constrained diffusion model'
+  authors: 'Yuanshao Zhu, James Jianqiao Yu*, Xiangyu Zhao*, Qidong Liu, Yongchao Ye, Wei Chen, Zijian Zhang, Xuetao Wei, Yuxuan Liang*'
+  venue: KDD 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2023-EMNLP-primacy-effect-of-chatgpt.png
+  link: https://arxiv.org/pdf/2404.15380
+- title: Cluster-Wide Task Slowdown Detection in Cloud System
+  authors: 'Feiyi Chen, Yingying Zhang, Lunting Fan, Yuxuan Liang, Guansong Pang, Qingsong Wen, Shuiguang Deng'
+  venue: KDD 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2022-MM-beyond-geo-localization-fine-g.png
+  link: https://arxiv.org/pdf/2408.04236
+- title: 'The Snowflake Hypothesis: Training and Powering GNN with One Node One Receptive field'
+  authors: 'Kun Wang, Guohao Li, Shilong Wang, Guibin Zhang, Kai Wang, Yang You, Xiaojiang Peng, Yuxuan Liang*, Yang Wang*'
+  venue: KDD 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2022-SIGSPATIAL-when-do-contrastive-learning.png
+  link: https://arxiv.org/pdf/2308.10051
+- title: 'Position Paper: What Can Large Language Models Tell Us about Time Series Analysis'
+  authors: 'Ming Jin, Yifan Zhang, Wei Chen, Kexin Zhang, Yuxuan Liang*, Bin Yang, Jindong Wang, Shirui Pan, Qingsong Wen*'
+  venue: ICML 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2024-ICLR-graph-lottery-ticket-automated.png
+  link: https://arxiv.org/pdf/2402.02713
+- title: 'LaDe: The first comprehensive last-mile delivery dataset from industry'
+  authors: 'Lixia Wu, Haomin Wen, Haoyuan Hu, Xiaowei Mao, Yutong Xia, Ergang Shan, Jianbin Zhen, Junhong Lou, Yuxuan Liang*, Liuqing Yang, others'
+  venue: KDD 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2024-ICLR-time-llm-time-series-forecasti.png
+  link: https://arxiv.org/pdf/2306.10675
+- title: 'Two heads are better than one: Boosting graph sparse training via semantic and topological awareness'
+  authors: 'Guibin Zhang, Yanwei Yue, Kun Wang, Junfeng Fang, Yongduo Sui, Kai Wang, Yuxuan Liang, Dawei Cheng, Shirui Pan, Tianlong Chen'
+  venue: ICML 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-ICML-two-heads-are-better.png
+  link: https://arxiv.org/pdf/2402.01242
+- title: 'Navigating Complexity: Toward Lossless Graph Condensation via Expanding Window Matching'
+  authors: 'Yuchen Zhang, Tianle Zhang, Kai Wang, Ziyao Guo, Yuxuan Liang, Xavier Bresson, Wei Jin, Yang You'
+  venue: ICML 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-KDD-lade-the-first-comprehensive.png
+  link: https://arxiv.org/pdf/2402.05011
+- title: 'Predicting Parking Availability in Singapore with Cross-Domain Data: A New Dataset and A Data-Driven Approach'
+  authors: 'Huaiwu Zhang, Yutong Xia, Siru Zhong, Kun Wang, Zekun Tong, Qingsong Wen, Roger Zimmermann, Yuxuan Liang*'
+  venue: IJCAI 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2024-IJCAI-spatio-temporal-field-neural-n.png
+  link: https://arxiv.org/pdf/2405.18910
+- title: Spatio-Temporal Field Neural Networks for Air Quality Inference
+  authors: 'Yutong Feng, Qiongyan Wang, Yutong Xia, Junlin Huang, Siru Zhong, Yuxuan Liang*'
+  venue: IJCAI 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-ICML-navigating-complexity-toward-l.png
+  link: https://arxiv.org/pdf/2403.02354
+- title: 'Towards Robust Trajectory Representations: Isolating Environmental Confounders with Causal Learning'
+  authors: 'Kang Luo, Yuanshao Zhu, Wei Chen, Kun Wang, Zhengyang Zhou, Sijie Ruan, Yuxuan Liang*'
+  venue: IJCAI 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2022-CIKM-trajformer-efficient-trajector.jpg
+  link: https://arxiv.org/pdf/2404.14073.pdf
+- title: Learning Multi-Pattern Normalities in the Frequency Domain for Efficient Anomaly Detection
+  authors: 'Feiyi Chen, Yingying Zhang, Zhen Qin, Lunting Fan, Renhe Jiang, Yuxuan Liang, Qingsong Wen, Shuiguang Deng'
+  venue: ICDE 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2022-SIGSPATIAL-periodic-residual-learning-for.jpg
+  link: https://arxiv.org/pdf/2311.16191
+- title: 'UrbanCLIP: Learning Text-enhanced Urban Region Profiling with Contrastive Language-Image Pretraining from the Web'
+  authors: 'Yibo Yan, Haomin Wen, Siru Zhong, Wei Chen, Haodong Chen, Qingsong Wen, Roger Zimmermann, Yuxuan Liang*'
+  venue: WWW 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - multimodal
+  image: /imgs/publications/2022-IJCNN-time-aware-neighbor-sampling-o.jpg
+  link: https://arxiv.org/pdf/2310.18340.pdf
+- title: 'UniTime: A Language-Empowered Unified Model for Cross-Domain Time Series Forecasting'
+  authors: 'Xu Liu, Junfeng Hu, Yuan Li, Shizhe Diao, Yuxuan Liang*, Bryan Hooi, Roger Zimmermann'
+  venue: WWW 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2021-TVCG-visual-cascade-analytics-of.jpg
+  link: https://arxiv.org/pdf/2310.09751.pdf
+- title: 'COLA: Cross-city Mobility Transformer for Human Trajectory Simulation'
+  authors: 'Yu Wang, Tongya Zheng, Yuxuan Liang, Shunyu Liu, Mingli Song'
+  venue: WWW 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-ICLR-nuwadynamics-discovering-and-u.jpg
+  link: https://arxiv.org/pdf/2403.01801
+- title: 'NuwaDynamics: Discovering and Updating in Causal Spatio-Temporal Modeling'
+  authors: 'Kun Wang, Hao Wu, Yifan Duan, Guibin Zhang, Kai Wang, Xiaojiang Peng, Yu Zheng, Yuxuan Liang*, Yang Wang*'
+  venue: ICLR 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2021-IJCAI-modeling-trajectories-with-neu.jpg
+  link: https://openreview.net/pdf?id=sLdVl0q68X
+- title: Graph Lottery Ticket Automated
+  authors: 'Guibin Zhang, Kun Wang, Wei Huang, Yanwei Yue, Yang Wang, Roger Zimmermann, Aojun Zhou, Dawei Cheng, Jin Zeng*, Yuxuan Liang*'
+  venue: ICLR 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2021-WWW-fine-grained-urban-flow-predic.jpg
+  link: https://openreview.net/pdf?id=nmBjBZoySX
+- title: 'Time-LLM: Time Series Forecasting by Reprogramming Large Language Models'
+  authors: 'Ming Jin, Shiyu Wang, Lintao Ma, Zhixuan Chu, James Y. Zhang, Xiaoming Shi, Pin-Yu Chen, Yuxuan Liang, Yuan-Fang Li, Shirui Pan, Qingsong Wen'
+  venue: ICLR 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2021-WWW-autostg-neural-architecture-se.jpg
+  link: https://openreview.net/pdf?id=Unb5CVPtae
+- title: 'Earthfarseer: Versatile Spatio-Temporal Dynamical Systems Modeling in One Model'
+  authors: 'Hao Wu, Shilong Wang, Yuxuan Liang, Zhengyang Zhou, Wei Huang, Wei Xiong, Kun Wang'
+  venue: AAAI 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2021-WWW-mixup-for-node-and.jpg
+  link: https://arxiv.org/pdf/2312.08403
+- title: 'MSGNet: Learning Multi-Scale Inter-Series Correlations for Multivariate Time Series Forecasting'
+  authors: 'Wanlin Cai, Yuxuan Liang, Xianggen Liu, Jianshuai Feng, Yuankai Wu*'
+  venue: AAAI 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2021-WWW-curgraph-curriculum-learning-f.jpg
+  link: https://arxiv.org/pdf/2401.00423
+- title: 'SENCR: A Span Enhanced Two-stage Network with Counterfactual Rethinking for Chinese NER'
+  authors: 'Hang Zheng, Qingsong Li, Shen Chen, Yuxuan Liang, Li Liu*'
+  venue: AAAI 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2021-NeurIPS-directed-graph-contrastive-lea.jpg
+  link: https://ojs.aaai.org/index.php/AAAI/article/view/29941
+- title: Urban Sensing for Multi-Destination Workers via Deep Reinforcement Learning
+  authors: 'Shuliang Wang, Song Tang, Sijie Ruan*, Cheng Long, Yuxuan Liang, Qi Li, Ziqiang Yuan, Jie Bao, Yu Zheng'
+  venue: ICDE 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2021-NeurIPS-adaptive-data-augmentation-on.jpg
+  link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10597850
+- title: 'CityCAN: Causal Attention Network for Citywide Spatio-Temporal Forecasting'
+  authors: 'Chengxin Wang, Yuxuan Liang, Gary Tan'
+  venue: WSDM 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-IJCAI-spatio-temporal-field-neural-n.png
+  link: ''
+- title: Fall Prediction by a Spatio-Temporal Multi-Channel Causal Model from Wearable Sensors Data
+  authors: 'Guorui Liao, Jiawei Liu, Yuxuan Liang, Shu Wang, Li Liu*'
+  venue: ICASSP 2024
+  year: 2024
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2021-MM-learning-multi-context-aware-l.jpg
+  link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10447297
+- title: 'Brave the Wind and the Waves: Discovering Robust and Generalizable Graph Lottery Tickets'
+  authors: Kun Wang, Yuxuan Liang*, Xinglin Li, Guohao Li, Bernard Ghanem, Roger Zimmermann, Zhengyang Zhou, huahui Yi, Yudong Zhang, Yang Wang*
+  venue: TPAMI 2023
+  year: 2023
+  is_journal: true
+  categories:
+  - graph
+  image: /imgs/publications/2022-SIGSPATIAL-periodic-residual-learning-for.jpg
+  link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10356750
+- title: 'Spatio-Temporal Graph Neural Networks for Predictive Learning in Urban Computing: A Survey'
+  authors: Guangyin Jin, Yuxuan Liang*, Yuchen Fang, Jincai Huang, Junbo Zhang, Yu Zheng
+  venue: TKDE 2023
+  year: 2023
+  is_journal: true
+  categories:
+  - survey
+  - stm
+  - graph
+  image: /imgs/publications/2024-ICDE-urban-sensing-for-multi-destin.jpg
+  link: https://arxiv.org/pdf/2303.14483.pdf
+- title: Predicting collective human mobility via countering spatiotemporal heterogeneity
+  authors: Zhengyang Zhou, Kuo Yang, Yuxuan Liang, Binwu Wang, Hongyang Chen, Yang Wang
+  venue: TMC 2023
+  year: 2023
+  is_journal: true
+  categories:
+  - stm
+  image: /imgs/publications/2020-TKDE-fine-grained-urban-flow-infere.jpg
+  link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10185457
+- title: Decoupling Long-and Short-Term Patterns in Spatiotemporal Inference
+  authors: ''
+  venue: TNNLS 2023
+  year: 2023
+  is_journal: true
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2020-TKDE-predicting-citywide-crowd-flow.jpg
+  link: https://arxiv.org/pdf/2109.09506.pdf
+- title: 'AutoSTG+: An Automatic Framework to Discover The Optimal Network for Spatio-temporal Graph Prediction'
+  authors: Songyu Ke, Zheyi Pan, Tianfu He, Yuxuan Liang, Junbo Zhang, Yu Zheng
+  venue: AI 2023
+  year: 2023
+  is_journal: true
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2020-TKDE-spatio-temporal-meta-learning-.jpg
+  link: http://urban-computing.com/pdf/AIJ_AutoSTG_Plus.pdf
+- title: End-to-end Delay Modeling via Leveraging Competitive Interaction among Network Flows
+  authors: Weiping Zheng, Minli Hong, Ruihao Ye, Xiaomao Fan, Yuxuan Liang, Gansen Zhao, Roger Zimmermann
+  venue: TNSM 2023
+  year: 2023
+  is_journal: true
+  categories:
+  - others
+  image: /imgs/publications/2020-TBD-predicting-urban-water-quality.jpg
+  link: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10349684
+- title: 'Deciphering Spatio-Temporal Graph Forecasting: A Causal Lens and Treatment'
+  authors: ''
+  venue: NeurIPS 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2022-IJCNN-time-aware-neighbor-sampling-o.jpg
+  link: https://arxiv.org/pdf/2309.13378.pdf
+- title: 'LargeST: A Benchmark Dataset for Large-Scale Traffic Forecasting (DB Track)'
+  authors: Xu Liu, Yutong Xia, Yuxuan Liang*, Junfeng Hu, Yiwei Wang, Lei Bai, Chao Huang, Zhenquang Liu, Brvan Hooi, Roger Zimmermann
+  venue: NeurIPS 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2020-KDD-nodeaug-semi-supervised-node-c.jpg
+  link: https://arxiv.org/pdf/2306.08259.pdf
+- title: Graph Neural Processes for Spatio-Temporal Extrapolation
+  authors: ''
+  venue: KDD 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2020-NeurIPS-digraph-inception-convolutiona.jpg
+  link: https://arxiv.org/abs/2305.18719
+- title: 'Maintaining the Status Quo: Capturing Invariant Relations for OOD Spatiotemporal Learning'
+  authors: Zhengyang Zhou, Qihe Huang, Kuo Yang, Kun Wang, Xu Wang, Yudong Zhang, Yuxuan Liang, Yang Wang
+  venue: KDD 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2020-ECML-PKDD-revisiting-convolutional-neura.jpg
+  link: https://dl.acm.org/doi/pdf/10.1145/3580305.3599421
+- title: Contrastive Trajectory Similarity Learning with Dual-Feature Attention
+  authors: Yanchuan Chang, Jianzhong Qi, Yuxuan Liang, Egemen Tanin
+  venue: ICDE 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2020-KDD-autost-efficient-neural-archit.jpg
+  link: https://arxiv.org/abs/2210.05155
+- title: 'Searching Lottery Tickets in Graph Neural Networks: A Dual Perspective'
+  authors: Kun Wang, Yuxuan Liang*, Pengkun Wang, Xu Wang, Pengfei Gu, Junfeng Fang, Yang Wang*
+  venue: ICLR 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-WWW-urbanclip-learning-text-enhanc.jpg
+  link: https://openreview.net/pdf?id=Dvs-a3aymPe
+- title: 'AirFormer: Predicting Nationwide Air Quality in China with Transformers'
+  authors: Yuxuan Liang, Yutong Xia, Songyu Ke, Yiwei Wang, Qingsong Wen, Junbo Zhang, Yu Zheng, Roger Zimmermann
+  venue: AAAI 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-WWW-unitime-a-language-empowered-u.jpg
+  link: https://arxiv.org/pdf/2211.15979.pdf
+- title: 'PetalView: Fine-grained Location and Orientation Extraction of Street-view Images via Cross-view Local Search'
+  authors: Wenmiao Hu, Yichen Zhang, Yuxuan Liang, Yifang Yin, Xianjing Han, Hannes Kruppa, See-Kiong Ng, Roger Zimmermann
+  venue: MM 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - multimodal
+  image: /imgs/publications/2024-WWW-cola-cross-city-mobility-trans.jpg
+  link: https://dl.acm.org/doi/pdf/10.1145/3581783.3612007
+- title: 'DiffSTG: Probabilistic Spatio-Temporal Graph Forecasting with Denoising Diffusion Models'
+  authors: Haomin Wen, Youfang Lin, Yutong Xia, Huaiyu Wan, Qingsong Wen, Roger Zimmermann, Yuxuan Liang*
+  venue: SIGSPATIAL 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2024-ICLR-nuwadynamics-discovering-and-u.jpg
+  link: https://arxiv.org/pdf/2301.13629.pdf
+- title: Primacy Effect of ChatGPT
+  authors: ''
+  venue: EMNLP 2023
+  year: 2023
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2020-TBD-predicting-urban-water-quality.jpg
+  link: https://aclanthology.org/2023.emnlp-main.8/
+- title: Mixed-Order Relation-Aware Recurrent Neural Networks for Spatio-Temporal Forecasting
+  authors: Yuxuan Liang, Kun Ouyang, Yiwei Wang, Zheyi Pan, Yifang Yin, Hongyang Chen, Junbo Zhang, Yu Zheng, David S Rosenblum, Roger Zimmermann
+  venue: TKDE 2022
+  year: 2022
+  is_journal: true
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/2020-UBICOMP-dynamic-public-resource-alloca.jpg
+  link: https://ieeexplore.ieee.org/document/9956738
+- title: 'Beyond Geo-localization: Fine-grained Orientation of Street-view Images by Cross-view Matching with Satellite Imagery'
+  authors: Wenmiao Hu, Yichen Zhang, Yuxuan Liang, Yifang Yin, Andrei Georgescu, An Tran, Hannes Kruppa, See-Kiong Ng, Roger Zimmermann
+  venue: MM 2022
+  year: 2022
+  is_journal: false
+  categories:
+  - multimodal
+  image: /imgs/publications/2021-WWW-fine-grained-urban-flow-predic.jpg
+  link: https://dl.acm.org/doi/pdf/10.1145/3503161.3548102
+- title: When Do Contrastive Learning Signals Help Spatio-Temporal Graph Forecasting?
+  authors: Xu Liu+, Yuxuan Liang+, Chao Huang, Yu Zheng, Bryan Hooi, and Roger Zimmermann
+  venue: SIGSPATIAL 2022
+  year: 2022
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2020-AAAI-learning-to-generate-maps.jpg
+  link: https://arxiv.org/pdf/2108.11873.pdf
+- title: 'Dualformer: Local-global stratified transformer for efficient video recognition'
+  authors: Yuxuan Liang, Pan Zhou, Roger Zimmermann, Shuicheng Yan
+  venue: ECCV 2022
+  year: 2022
+  is_journal: false
+  categories:
+  - multimodal
+  image: /imgs/publications/2020-ECML-PKDD-progressive-supervision-for-no.jpg
+  link: https://dl.acm.org/doi/abs/10.1007/978-3-031-19830-4_33
+- title: 'TrajFormer: Efficient Trajectory Classification with Transformers'
+  authors: Yuxuan Liang, Kun Ouyang, Yiwei Wang, Xu Liu, Hongyang Chen, Junbo Zhang, Yu Zheng, Roger Zimmermann
+  venue: CIKM 2022
+  year: 2022
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2020-IJCNN-unsupervised-learning-of-disen.jpg
+  link: https://zhangjunbo.org/pdf/2022_CIKM_TrajFormer.pdf
+- title: Periodic Residual Learning for Crowd Flow Forecasting
+  authors: Chengxin Wang, Yuxuan Liang, Gary Tan
+  venue: SIGSPATIAL 2022
+  year: 2022
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2020-Before-paper.jpg
+  link: https://dl.acm.org/doi/pdf/10.1145/3557915.3560947
+- title: Time-Aware Neighbor Sampling on Temporal Graphs
+  authors: Yiwei Wang, Yujun Cai, Yuxuan Liang, Henghui Ding, Changhu Wang, Bryan Hooi
+  venue: IJCNN 2022
+  year: 2022
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2021-WWW-autostg-neural-architecture-se.jpg
+  link: https://arxiv.org/abs/2112.09845
+- title: Should We Rely on Entity Mentions for Relation Extraction? Debiasing Relation Extraction with Counterfactual Analysis
+  authors: Yiwei Wang, Muhao Chen, Wenxuan Zhou, Yujun Cai, Yuxuan Liang, Dayiheng Liu, Baosong Yang, Juncheng Liu, Bryan Hooi
+  venue: NAACL 2022
+  year: 2022
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/2024-ICLR-nuwadynamics-discovering-and-u.jpg
+  link: https://aclanthology.org/2022.naacl-main.224.pdf
+- title: Visual Cascade Analytics of Large-Scale Spatiotemporal Data
+  authors: Zikun Deng, Di Weng, Yuxuan Liang, Jie Bao, Yu Zheng, Tobias Schreck, Mingliang Xu, Yingcai Wu
+  venue: TVCG 2021
+  year: 2021
+  is_journal: true
+  categories:
+  - stm
+  image: /imgs/publications/2019-KDD-urban-traffic-prediction-from.jpg
+  link: http://urban-computing.com/pdf/TVCG_viscas.pdf
+- title: Modeling Trajectories with Neural Ordinary Differential Equations
+  authors: Yuxuan Liang, Kun Ouyang, Hanshu Yan, Yiwei Wang, Zekun Tong, Roger Zimmermann
+  venue: IJCAI 2021
+  year: 2021
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2019-KDD-urbanfm-inferring-fine-grained.jpg
+  link: https://www.ijcai.org/proceedings/2021/0207.pdf
+- title: Fine-grained Urban Flow Prediction
+  authors: Yuxuan Liang, Kun Ouyang, Junkai Sun, Yiwei Wang, Junbo Zhang, Yu Zheng, David Rosenblum, Roger Zimmermann
+  venue: WWW 2021
+  year: 2021
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2018-IJCAI-geoman-multi-level-attention-n.jpg
+  link: http://urban-computing.com/pdf/WWW2021UrbanFlowPrediction.pdf
+- title: 'AutoSTG: Neural Architecture Search for Predictions of Spatio-Temporal Graph'
+  authors: Zheyi Pan, Songyu Ke, Xiaodu Yang, Yuxuan Liang, Yong Yu, Junbo Zhang, Yu Zheng
+  venue: WWW 2021
+  year: 2021
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2017-SIGSPATIAL-inferring-traffic-cascading-pa.jpg
+  link: http://panzheyi.cc/publication/pan2021autostg/paper.pdf
+- title: Mixup for Node and Graph Classification
+  authors: Yiwei Wang, Wei Wang, Yuxuan Liang, Yujun Cai, Bryan Hooi
+  venue: WWW 2021
+  year: 2021
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2016-IJCAI-urban-water-quality-prediction.jpg
+  link: https://dl.acm.org/doi/abs/10.1145/3442381.3449796?casa_token=ld3tJXow02AAAAAA:k6qS_Tsxym4YyANwQn8a-0Xf98Y0jD_gfTpPt8wocORTvaGRThRLseXYuvLbO8RU_EC0k6gAX6T7dg
+- title: 'Curgraph: Curriculum learning for graph classification'
+  authors: Yiwei Wang, Wei Wang, Yuxuan Liang, Yujun Cai, Bryan Hooi
+  venue: WWW 2021
+  year: 2021
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2026-TPAMI-nuwadynamics-a-causality-aware.jpg
+  link: https://bhooi.github.io/papers/curgraph_web21.pdf
+- title: Directed Graph Contrastive Learning
+  authors: Zekun Tong, Yuxuan Liang, Henghui Ding, Yongxing Dai, Xinke Li, Changhu Wang
+  venue: NeurIPS 2021
+  year: 2021
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/0000-Unknown-7-2.jpg
+  link: https://proceedings.neurips.cc/paper/2021/file/a3048e47310d6efaa4b1eaf55227bc92-Paper.pdf
+- title: Adaptive Data Augmentation on Temporal Graphs
+  authors: Yiwei Wang, Yujun Cai, Yuxuan Liang, Henghui Ding, Changhu Wang, Siddharth Bhatia, Bryan Hooi
+  venue: NeurIPS 2021
+  year: 2021
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2025-TITS-paper.jpg
+  link: https://proceedings.neurips.cc/paper/2021/file/0b0b0994d12ad343511adfbfc364256e-Paper.pdf
+- title: Learning Multi-context Aware Location Representations from Large-scale Geotagged Images
+  authors: Yifang Yin, Ying Zhang, Zhenguang Liu, Yuxuan Liang, Sheng Wang, Rajiv Ratn Shah, Roger Zimmermann
+  venue: MM 2021
+  year: 2021
+  is_journal: false
+  categories:
+  - multimodal
+  image: /imgs/publications/2024-TKDE-modeling-spatio-temporal-dynam.jpg
+  link: https://dl.acm.org/doi/pdf/10.1145/3474085.3475268
+- title: Fine-grained Urban Flow Inference
+  authors: Kun Ouyang, Yuxuan Liang, Ye Liu, Zekun Tong, Sijie Ruan, David Rosenblum, Yu Zheng
+  venue: TKDE 2020
+  year: 2020
+  is_journal: true
+  categories:
+  - stm
+  image: /imgs/publications/2024-TRC-semantic-fused-multi-granulari.jpg
+  link: http://urban-computing.com/pdf/TKDE_UrbanFlowInfer.pdf
+- title: Predicting Citywide Crowd Flows in Irregular Regions using Multi-View Graph Convolutional Networks
+  authors: Junkai Sun, Junbo Zhang, Qiaofei Li, Xiuwen Yi, Yuxuan Liang, Yu Zheng
+  venue: TKDE 2020
+  year: 2020
+  is_journal: true
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2024-SIGSPATIAL-paper.jpg
+  link: http://urban-computing.com/pdf/MVGCN_Final_Version.pdf
+- title: Spatio-Temporal Meta Learning for Urban Traffic Prediction
+  authors: Zheyi Pan, Wentao Zhang, Yuxuan Liang, Weinan Zhang, Yong Yu, Junbo Zhang, Yu Zheng
+  venue: TKDE 2020
+  year: 2020
+  is_journal: true
+  categories:
+  - stm
+  image: /imgs/publications/2024-ECML-PKDD-terra-a-multimodal-spatio-temp.jpg
+  link: http://urban-computing.com/pdf/MetaLearning_tkde_2020.pdf
+- title: Predicting Urban Water Quality with Ubiquitous Data – a Data-Driven Approach
+  authors: Ye Liu, Yuxuan Liang, Kun Ouyang, Shuming Liu, David Rosenblum, Yu Zheng
+  venue: TBD 2020
+  year: 2020
+  is_journal: true
+  categories:
+  - stm
+  image: /imgs/publications/2024-KDD-controltraj-controllable-traje.jpg
+  link: http://urban-computing.com/pdf/ieeetbd2020_UrbanWater.pdf
+- title: 'Nodeaug: Semi-Supervised Node Classification with Data Augmentation'
+  authors: Yiwei Wang, Wei Wang, Yuxuan Liang, Yujun Cai, Juncheng Liu, Bryan Hooi
+  venue: KDD 2020
+  year: 2020
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-KDD-cluster-wide-task-slowdown-det.jpg
+  link: https://bhooi.github.io/papers/nodeaug_kdd20.pdf
+- title: Digraph Inception Convolutional Networks
+  authors: Zekun Tong, Yuxuan Liang, Changsheng Sun, Xinke Li, David Rosenblum, Andrew Lim
+  venue: NeurIPS 2020
+  year: 2020
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2024-ICML-position-paper-what-can.jpg
+  link: https://proceedings.neurips.cc/paper/2020/file/cffb6e2288a630c2a787a64ccc67097c-Paper.pdf
+- title: Revisiting convolutional neural networks for citywide crowd flow analytics
+  authors: Yuxuan Liang, Kun Ouyang, Yiwei Wang, Ye Liu, Junbo Zhang, Yu Zheng, David S Rosenblum
+  venue: ECML-PKDD 2020
+  year: 2020
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-KDD-lade-the-first-comprehensive.jpg
+  link: http://urban-computing.com/pdf/2020-ECML-final.pdf
+- title: 'Autost: Efficient Neural Architecture Search for Spatio-Temporal Prediction'
+  authors: Ting Li, Junbo Zhang, Kainan Bao, Yuxuan Liang, Yexin Li, Yu Zheng
+  venue: KDD 2020
+  year: 2020
+  is_journal: false
+  categories:
+  - stm
+  - graph
+  image: /imgs/publications/2024-IJCAI-predicting-parking-availabilit.jpg
+  link: http://urban-computing.com/pdf/AutoST_kdd20_camera_ready.pdf
+- title: Dynamic Public Resource Allocation based on Human Mobility Prediction
+  authors: Sijie Ruan, Jie Bao, Yuxuan Liang, Ruiyuan Li, Tianfu He, Chuishi Meng, Yanhua Li, Yingcai Wu, Yu Zheng
+  venue: UBICOMP 2020
+  year: 2020
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-IJCAI-spatio-temporal-field-neural-n.jpg
+  link: http://urban-computing.com/pdf/paper_UbiComp20-Ruan.pdf
+- title: Learning to Generate Maps from Trajectories
+  authors: Sijie Ruan, Cheng Long, Jie Bao, Chunyang Li, Zisheng Yu, Ruiyuan Li, Yuxuan Liang, Tianfu He, Yu Zheng
+  venue: AAAI 2020
+  year: 2020
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2022-IJCNN-time-aware-neighbor-sampling-o.jpg
+  link: http://urban-computing.com/pdf/AAAI-RuanS.361.pdf
+- title: Progressive Supervision for Node Classification
+  authors: Yiwei Wang, Wei Wang, Yuxuan Liang, Yujun Cai, Bryan Hooi
+  venue: ECML-PKDD 2020
+  year: 2020
+  is_journal: false
+  categories:
+  - graph
+  image: /imgs/publications/2020-KDD-nodeaug-semi-supervised-node-c.jpg
+  link: https://bitbucket.org/ghentdatascience/ecmlpkdd20-papers/raw/master/RT/sub_221.pdf
+- title: Unsupervised Learning of Disentangled Location Embeddings
+  authors: Kun Ouyang, Yuxuan Liang, Ye Liu, David S Rosenblum, Wenzhuo Yang
+  venue: IJCNN 2020
+  year: 2020
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-ICDE-urban-sensing-for-multi-destin.jpg
+  link: https://ieeexplore.ieee.org/document/9207324
+- title: Urban Traffic Prediction from Spatio-Temporal Data using Deep Meta Learning
+  authors: Zheyi Pan, Yuxuan Liang, Weifeng Wang, Yong Yu, Yu Zheng, Junbo Zhang
+  venue: KDD 2019
+  year: before2020
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-IJCAI-towards-robust-trajectory-repr.jpg
+  link: http://urban-computing.com/pdf/kdd_2019_camera_ready_ST_MetaNet.pdf
+- title: 'Urbanfm: Inferring Fine-Grained Urban Flows'
+  authors: Yuxuan Liang+, Kun Ouyang+, Lin Jing, Sijie Ruan, Ye Liu, Junbo Zhang, David S Rosenblum, Yu Zheng
+  venue: KDD 2019
+  year: before2020
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-ICDE-learning-multi-pattern-normali.jpg
+  link: http://urban-computing.com/pdf/yuxuanUrbanFMKDD2019.pdf
+- title: Learning Multi-Objective Rewards and User Utility Function in Contextual Bandits for Personalized Ranking
+  authors: Nirandika Wanigasekara, Yuxuan Liang, Siong Thye Goh, Ye Liu, Joseph Jay Williams, David S Rosenblum
+  venue:
+  year: before2020
+  is_journal: false
+  categories:
+  - others
+  image: /imgs/publications/0000-Unknown-3-12.jpg
+  link: https://www.ijcai.org/Proceedings/2019/0532.pdf
+- title: 'GeoMAN: Multi-Level Attention Networks for Geo-sensory Time Series Prediction.'
+  authors: Yuxuan Liang, Songyu Ke, Junbo Zhang, Xiuwen Yi, Yu Zheng
+  venue: IJCAI 2018
+  year: before2020
+  is_journal: false
+  categories:
+  - stm
+  - time-series
+  image: /imgs/publications/0000-Unknown-4-11.jpg
+  link: https://www.ijcai.org/Proceedings/2018/0476.pdf
+- title: Inferring Traffic Cascading Patterns
+  authors: Yuxuan Liang, Zhongyuan Jiang, Yu Zheng
+  venue: SIGSPATIAL 2017
+  year: before2020
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/2024-AAAI-earthfarseer-versatile-spatio-.jpg
+  link: https://www.microsoft.com/en-us/research/wp-content/uploads/2017/10/Traffic-cascading-patterns_Zheng_SIGSPATIAL2017.pdf
+- title: Urban Water Quality Prediction based on Multi-Task Multi-View Learning
+  authors: Ye Liu, Yu Zheng, Yuxuan Liang, Shuming Liu, David S Rosenblum
+  venue: IJCAI 2016
+  year: before2020
+  is_journal: false
+  categories:
+  - stm
+  image: /imgs/publications/0000-Unknown-6-6.jpg
+  link: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/ijcai16-Zheng-water-quality.pdf

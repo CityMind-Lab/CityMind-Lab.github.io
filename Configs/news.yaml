@@ -1,0 +1,173 @@
+# 首页 News 表格，按时间倒序（最新在前）
+# 修改后保存即可，首页会自动请求本文件并更新
+
+- date: "2025/11/07"
+  content: "4 papers on ST data mining were accepted by AAAI'26 and ICDE'26. Congrats to all!"
+
+- date: "2025/10/31"
+  content: "Our paper titled \"Test-Time Graph Rebirth For GNN Generalization Under Distribution Shifts\" has been selected as <strong>Best Paper Runner-up Award</strong> at IEEE ICDM 2025. Congrats to all!"
+
+- date: "2025/09/18"
+  content: "9 papers on ST data mining were accepted by NeurIPS'25. Congrats to all!"
+
+- date: "2025/08/28"
+  content: "4 papers on ST data mining were accepted by TITS, MM'25, SIGSPATIAL'25 and ICDM'25. Congrats to Weilin, Yongzheng and all!"
+
+- date: "2025/05/18"
+  content: "4 papers on ST data mining were accepted by KDD-25. Congrats to all!"
+
+- date: "2025/05/08"
+  content: "Our survey paper and tutorial on Foundation Models for ST data was accepted by KDD-25."
+
+- date: "2025/05/01"
+  content: "Two papers on LLMs/FMs for time series were accepted by ICML. Congrats to Siru and Xu!"
+
+- date: "2025/04/29"
+  content: "Two papers on ST data mining were accepted by IJCAI. Congrats to Yanchen and all!"
+
+- date: "2025/02/10"
+  content: "Congrats to Jiaxi and Siru for receiving Runner-Up Prize in the HKUST(GZ) DSA Excellent Research Award!"
+
+- date: "2025/01/22"
+  content: "Four papers on ST data mining were accepted by ICLR. Congrats to all!"
+
+- date: "2025/01/20"
+  content: "One paper on location embedding was accepted by WWW. Congrats to Xixuan!"
+
+- date: "2024/09/26"
+  content: "Five papers on spatio-temporal graphs and time series were accepted by NeurIPS. Congrats to all!"
+
+- date: "2024/08/25"
+  content: "Our paper about spatio-temporal diffusion model was accepted by SIGSPATIAL-24. Congrats to Junfeng!"
+
+- date: "2024/07/27"
+  content: "Our survey on multimodal urban computing was accepted by Information Fusion (IF=14.7). Congrats to Xingchen!"
+
+- date: "2024/07/26"
+  content: "Our survey on last-mile delivery was accepted by TKDE. Congrats to Haomin!"
+
+- date: "2024/07/16"
+  content: "Our paper on urban image-text retrieval was accepted by ACM MM. Congrats to Siru!"
+
+- date: "2024/06/30"
+  content: "Our paper on explaining GNNs was accepted by TKDE. Congrats to Junfeng!"
+
+- date: "2024/05/19"
+  content: "We will organize the tutorial on Foundation Models for Time Series (FM4TS) at KDD-24."
+
+- date: "2024/05/17"
+  content: "Six papers on DDPM for trajectories, delivery dataset, GNNs, and TS were accepted by KDD. Congrats to all!"
+
+- date: "2024/05/06"
+  content: "Two papers on ST field neural network and carpark dataset were accepted by IJCAI. Congrats to all!"
+
+- date: "2024/05/01"
+  content: "Three papers on LLMs for time series and graph learning were accepted by ICML-24. Congrats to all!"
+
+- date: "2024/04/17"
+  content: "Our EdgeBrain (with Xinghai IoT) won the Silver Medal at International Exhibition of Inventions Geneva!"
+
+- date: "2024/04/17"
+  content: "Our paper on causal learning for trajectories was accepted by IJCAI. Congrats to Kang!"
+
+- date: "2024/04/07"
+  content: "Our survey on SSL for time series was accepted by TPAMI. Congrats to all collaborators!"
+
+- date: "2024/03/29"
+  content: "Our paper on cross-city traffic prediction was accepted by TR Part C. Congrats to Kehua!"
+
+- date: "2024/03/10"
+  content: "Our paper on anomaly detection was accepted by ICDE. Congrats to Feiyi!"
+
+- date: "2024/01/24"
+  content: "Congratulations to Xingchen for achieving the 1st Runner-Up position in the thesis writing competition in HKUST(GZ)!"
+
+- date: "2024/01/23"
+  content: "One paper on modeling ST dynamic system was accepted by TKDE-24. Congrats to Kun and Hao!"
+
+- date: "2024/01/23"
+  content: "Three papers on Time Series LLM, Urban LLM, and trajectory learning were accepted by WWW-24. Congrats to all!"
+
+- date: "2024/01/16"
+  content: "Three papers on Time Series LLM, ST causal inference, and GLT were accepted by ICLR-24. Congrats to all collaborators!"
+
+- date: "2023/12/14"
+  content: "One paper on spatio-temporal causal inference was accepted by ICASSP-24. Congrats to Guorui and Prof. Liu!"
+
+- date: "2023/12/09"
+  content: "Three papers on spatio-temporal data and causal inference were accepted by AAAI-24. Congrats to all collaborators!"
+
+- date: "2023/12/08"
+  content: "Our paper on graph lottery tickets was accepted by TPAMI. Congrats to Kun!"
+
+- date: "2023/12/07"
+  content: "Our paper on DRL for urban sensing was accepted by ICDE. Congrats to Sijie!"
+
+- date: "2023/11/01"
+  content: "Our survey on spatio-temporal neural networks for urban computing was accepted by TKDE."
+
+- date: "2023/10/21"
+  content: "Our paper about spatio-temporal causal inference was accepted by WSDM-24. Congrats to Chengxin!"
+
+- date: "2023/10/16"
+  content: "We completed the first survey on large models for time series and spatio-temporal data! [<a href=\"https://arxiv.org/pdf/2310.10196.pdf\" target=\"_blank\" rel=\"external nofollow noopener\">link</a>]"
+
+- date: "2023/09/23"
+  content: "LargeST, a large-scale traffic benchmark, was accepted by NeurIPS-23 DB Track. Congrats to Xu!"
+
+- date: "2023/09/23"
+  content: "Our paper about spatio-temporal causal inference was accepted by NeurIPS-23. Congrats to Yutong!"
+
+- date: "2023/09/09"
+  content: "Our paper about spatio-temporal diffusion model was accepted by SIGSPATIAL-23. Congrats to Haomin!"
+
+- date: "2023/07/26"
+  content: "One paper about geospatial cross-view matching was accepted by ACM MM-23. Congrats to Wenmiao!"
+
+- date: "2023/07/15"
+  content: "One paper about addressing spatio-temporal heterogeneity was accepted by TMC. Congrats to Zhengyang!"
+
+- date: "2023/06/30"
+  content: "One paper about spatio-temporal extrapolation was accepted by TNNLS. Congrats to Junfeng!"
+
+- date: "2023/05/17"
+  content: "Two papers about learning ST graphs were accepted by KDD-23. Congrats to Junfeng and Zhengyang!"
+
+- date: "2023/02/28"
+  content: "An extension of <a href=\"https://dl.acm.org/doi/10.1145/3442381.3449816\" target=\"_blank\" rel=\"external nofollow noopener\">AutoSTG</a> was accepted by Artificial Intelligence (AI). Congrats to Songyu!"
+
+- date: "2023/02/08"
+  content: "One paper about contrastive learning on trajectories was accepted by ICDE-23. Congrats to Yanchuan!"
+
+- date: "2023/01/21"
+  content: "One paper about GNN pruning was accepted as poster by ICLR-23. Congrats to Kun!"
+
+- date: "2022/11/20"
+  content: "One paper about <a href=\"https://arxiv.org/pdf/2211.15979.pdf\" target=\"_blank\" rel=\"external nofollow noopener\">large-scale air quality prediction via Transformer</a> was accepted as oral presentation by AAAI-23."
+
+- date: "2022/11/03"
+  content: "One paper about <a href=\"https://ieeexplore.ieee.org/document/9956738/\" target=\"_blank\" rel=\"external nofollow noopener\">learning mixed-order relationships in ST graphs</a> was accepted by TKDE."
+
+- date: "2022/08/23"
+  content: "Two papers about <a href=\"https://dl.acm.org/doi/pdf/10.1145/3557915.3560947\" target=\"_blank\" rel=\"external nofollow noopener\">periodic</a>/<a href=\"https://arxiv.org/pdf/2108.11873.pdf\" target=\"_blank\" rel=\"external nofollow noopener\">contrastive learning for ST data</a> were accepted as oral papers by SIGSPATIAL-22."
+
+- date: "2022/08/03"
+  content: "One paper entitled <a href=\"https://zhangjunbo.org/pdf/2022_CIKM_TrajFormer.pdf\" target=\"_blank\" rel=\"external nofollow noopener\">Efficient Trajectory Classification using Transformer</a> was accepted by CIKM-22."
+
+- date: "2022/07/04"
+  content: "One paper about <a href=\"https://arxiv.org/abs/2112.04674\" target=\"_blank\" rel=\"external nofollow noopener\">efficient video transformer</a> was accepted by ECCV-22."
+
+- date: "2022/07/01"
+  content: "One paper about geo-orientation was accepted by ACM MM-22."
+
+- date: "2022/05/20"
+  content: "One paper about sequential recommendation was accepted by KDD-22."
+
+- date: "2022/03/01"
+  content: "Three papers were accepted by NAACL-22, IEEE Access and IJCNN-22."
+
+- date: "2022/02/24"
+  content: "<a href=\"http://urban-computing.com/pdf/kdd_2019_camera_ready_ST_MetaNet.pdf\" target=\"_blank\" rel=\"external nofollow noopener\">ST-MetaNet</a> was selected as <a href=\"https://www.paperdigest.org/2021/02/most-influential-kdd-papers/\" target=\"_blank\" rel=\"external nofollow noopener\">Most Influential KDD Papers</a>."
+
+- date: "2022/02/24"
+  content: "Two spatio-temporal AI papers (<a href=\"https://www.ijcai.org/Proceedings/2018/0476.pdf\" target=\"_blank\" rel=\"external nofollow noopener\">GeoMAN</a> and <a href=\"https://www.microsoft.com/en-us/research/wp-content/uploads/2016/06/ijcai16-Zheng-water-quality.pdf\" target=\"_blank\" rel=\"external nofollow noopener\">stMTMVL</a>) were selected as <a href=\"https://www.paperdigest.org/2022/02/most-influential-ijcai-papers-2022-02/\" target=\"_blank\" rel=\"external nofollow noopener\">Most Influential IJCAI Papers</a>."
