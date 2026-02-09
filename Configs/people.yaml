@@ -1,0 +1,338 @@
+# People page config. Edit this file; the page loads configs/people.yaml and renders automatically.
+# Card fields: name, image, link (optional), degree_from, period, research
+
+hero_title: Members
+
+lab_director:
+  name: Yuxuan Liang
+  image: /imgs/people/yuxuan-liang.jpg
+  title: "**Assistant Professor**,<br>INTR&DSA Thrust"
+  socials:
+    - label: LinkedIn
+      url: "https://www.linkedin.com/in/yoshall/?lipi=urn%3Ali%3Apage%3Aprofile_common_profile_index%3B722857e7-ea78-4a4b-943c-15e84860f0d7"
+    - label: Google Scholar
+      url: "https://scholar.google.co.uk/citations?user=n9cODgcAAAAJ&hl=zh-CN&oi=ao"
+    - label: Github
+      url: "https://github.com/yoshall/"
+    - label: Home
+      url: "https://yuxuanliang.com/"
+  description: |
+    Dr. Yuxuan Liang is working on the research, development, and innovation of spatio-temporal data mining and AI, with a broad range of applications in smart cities. He obtained his PhD degree from School of Computing, National University of Singapore, supervised by Prof. Roger Zimmermann and Prof. David S. Rosenblum. He had three years of industrial experience in Microsoft, JD Technology, and Sea AI Lab, working closely with Dr. Yu Zheng and Dr. Junbo Zhang. He has published 100+ papers in refereed journals (e.g., TPAMI, AI, TKDE, TNNLS, TMC) and conferences (e.g., KDD, NeurIPS, ICML, ICLR, WWW). These publications have gathered ~7,000 citations on Google Scholar, with an h-index of 42. Among them, three papers were selected as the most influential IJCAI/KDD papers via PaperDigest. He was recognized as <a href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/7">Stanford/Elsevier Top 2% Scientists</a> in 2024, and 1 out of 10 most innovative and impactful PhD students focusing on Data Science in Singapore by <a href="https://sdsc.sg/fellowship/">Singapore Data Science Consortium</a> (SDSC) in 2020. He also received ACM SIGSPATIAL China Rising Star Nomination Award in 2024, and The 23rd China Patent Excellence Award in 2021. He has served as the Associate Editor of Neurocomputing (IF=6.0), the Area Chair for prestigious conferences such as KDD, MM, and ICASSP, and the Senior PC Member for IJCAI. He has also served as the organizer or co-chair of the Workshop on Urban Computing (Urbcomp@KDD), the Workshop on AI for Time Series (AI4TS@IJCAI/AAAI), and the Workshop on Mining and Learning from Time Series (MiLeTS@KDD). He has organized a series of tutorials on spatio-temporal data mining and time series analysis at prestigious conferences, such as KDD, WWW, AAAI, IJCAI, MM, and MDM. His research interests mainly lie in: 1) Spatio-temporal (ST) data mining: ST foundation models, Urban/ST + LLMs, AI for social good (e.g., urban, transportation, human mobility, environment, climate), physics-informed learning. 2) Urban computing: urban data sensing, urban data management, urban data analytics, urban decision-making. 3) Time series analysis: foundation models, forecasting, imputation, decomposition, anomaly detection. 4) Multimodal learning: multimodal fusion, vision-language models.
+
+postdoc:
+  - name: Qingxiang Liu
+    image: /imgs/people/qingxiang-liu.png
+    link: "https://scholar.google.com/citations?user=f1_Rw48AAAAJ&hl=zh-CN"
+    degree_from: CAS
+    period: 2025-Present
+    research: Time Series Analysis, Federated Learning
+  - name: Anqi Liang
+    image: /imgs/people/anqi-liang.jpg
+    link: "https://llianga.github.io/"
+    degree_from: SJTU
+    period: 2025-Present
+    research: Spatio-Temporal Data Mining, Multimodal
+
+phd_students:
+  - name: Xixuan Hao
+    image: /imgs/people/xixuan-hao.jpg
+    link: "https://skyerhxx.github.io/xxhao.github.io/"
+    degree_from: HKU
+    period: 2023-Present
+    research: Multimodal Learning, Spatio-Temporal Data Mining
+  - name: Weichuang Li
+    image: /imgs/people/weichuang-li.jpg
+    link: "https://waytron.net/"
+    degree_from: CityU
+    period: 2023-Present
+    research: Generative Models, Implicit Neural Representation
+  - name: Wei Chen
+    image: /imgs/people/wei-chen.jpg
+    link: "https://onedean.github.io/"
+    degree_from: OUC
+    period: 2023-Present
+    research: Data Mining, Causal Discovery, Information Retrieval
+  - name: Xusen Guo
+    image: /imgs/people/xusen-guo.jpg
+    link: "https://scholar.google.com/citations?user=cPCLgxAAAAAJ&hl=en"
+    degree_from: SYSU
+    period: 2023-Present
+    research: Intelligent Transportation, LLM, Agent
+  - name: Jiaxi Hu
+    image: /imgs/people/jiaxi-hu.jpg
+    link: "https://scholar.google.com/citations?user=TUzje_sAAAAJ&hl=zh-CN"
+    degree_from: CityU
+    period: 2024-Present
+    research: Time Series, Natural Language Architecture, Multimodal
+  - name: Qiongyan Wang
+    image: /imgs/people/qiongyan-wang.jpg
+    link: "https://dy-wqy.github.io/"
+    degree_from: UCPH
+    period: 2024-Present
+    research: Spatio-Temporal Data Mining, Multimodal Learning
+  - name: Siru Zhong
+    image: /imgs/people/siru-zhong.jpg
+    link: "https://siruzhong.github.io/"
+    degree_from: HKUST(GZ)
+    period: 2025-Present
+    research: Spatio-Temporal Data Mining, Multimodal Time Series
+  - name: Xingchen Zou
+    image: /imgs/people/xingchen-zou.jpg
+    link: "https://xczou.top/Home.html"
+    degree_from: HKUST(GZ)
+    period: 2025-Present
+    research: Data Mining, AI for Geotechnical Engineering
+  - name: Yangyu Wu
+    image: /imgs/people/yangyu-wu.jpg
+    link: "https://scholar.google.com/citations?user=FUIt3pMAAAAJ&hl=zh-CN"
+    degree_from: CNU
+    period: 2025-Present
+    research: LLM for Spatio-Temporal Learning, Natural Language Processing
+  - name: Yutian Jiang
+    image: /imgs/people/yutian-jiang.png
+    degree_from: JLU
+    period: 2025-Present
+    research: Computer Vision, Representation Learning
+
+mphil_students:
+  - name: Ziyu Zhou
+    image: /imgs/people/ziyu-zhou.png
+    link: "https://zhouziyu02.github.io/"
+    degree_from: BJUT
+    period: 2024-Present
+    research: Time series, Machine Learning
+  - name: Weilin Ruan
+    image: /imgs/people/weilin-ruan.jpg
+    link: "https://rwlinno.github.io/"
+    degree_from: JNU
+    period: 2024-Present
+    research: Spatio-Temporal Data Mining, Multimodal Learning
+  - name: Songxin Lei
+    image: /imgs/people/songxin-lei.png
+    link: "https://thunderlrr.github.io/"
+    degree_from: Tianjin University
+    period: 2024-Present
+    research: Urban Sensing, Reinforcement learning, Multimodal
+  - name: Yongzheng Liu
+    image: /imgs/people/yongzheng-liu.jpg
+    degree_from: ZJU
+    period: 2024-Present
+    research: Spatio-Temporal Data Mining, Multimodal, Smart Energy
+  - name: Huang Lan
+    image: /imgs/people/huang-lan.png
+    degree_from: SCAU
+    period: 2024-Present
+    research: Spatio-Temporal Data Mining, Multimodal
+  - name: Sisuo LYU
+    image: /imgs/people/sisuo-lyu.jpg
+    link: "https://sisuolv.github.io/"
+    degree_from: "HiT(SZ)"
+    period: 2024-Present
+    research: Time series, Spatio-Temporal Data Mining
+  - name: Jiabo Liu
+    image: /imgs/people/jiabo-liu.png
+    degree_from: JNU
+    period: 2025-Present
+    research: Spatio-Temporal Data Mining, Multimodal
+  - name: Ruijie Li
+    image: /imgs/people/ruijie-li.png
+    link: "https://reyjerry.github.io/"
+    degree_from: DMU
+    period: 2025-Present
+    research: Natural Language Architecture, Multimodal, Graph Learning
+  - name: Yuqian Wu
+    image: /imgs/people/yuqian-wu.png
+    degree_from: BNBU
+    period: 2025-Present
+    research: Spatio-Temporal Date Mining, Multimodal
+  - name: Yuling Liu
+    image: /imgs/people/yuling-liu.jpg
+    degree_from: BFU
+    period: 2025-Present
+    research: Spatio-Temporal Date Mining, Multimodal
+  - name: Xin Ouyang
+    image: /imgs/people/xin-ouyang.jpg
+    degree_from: ZJU
+    period: 2025-Present
+    research: Urban sensing, Reinforcement learning
+
+research_assistant:
+  - name: Junjie Qiu
+    image: /imgs/people/junjie-qiu.jpg
+    degree_from: SUSTech
+    period: 2024-Present
+    research: Trajectory Data Mining, Robotics
+  - name: Liwei Deng
+    image: /imgs/people/liwei-deng.jpg
+    degree_from: SZU
+    period: 2025-Present
+    research: Federated Learning, Time Series Forecasting
+
+research_interns:
+  - name: Yongqi Pan
+    image: /imgs/people/yongqi-pan.jpg
+    link: "https://github.com/pianyushi"
+    degree_from: NUDT
+    period: 2024-Present
+    research: Model lightweight, Object tracking, Blockchain
+  - name: Zhiqing Cui
+    image: /imgs/people/zhiqing-cui.jpg
+    degree_from: NUIST
+    period: 2025-Present
+    research: "Multimodal reasoning，Causal Learning, AI4Earth"
+
+alumni:
+  mphil_student:
+    - name: Jianxiang Zhou
+      link: "https://jasonz5.github.io/"
+      period: "2023~2025"
+      degree_from: Southern University of Science and Technology
+      note: "-> Tencent."
+    - name: Yutong Feng
+      link: "https://yutong-feng.github.io/"
+      period: "2023~2025"
+      degree_from: South China University of Technology
+    - name: Erdong Liu
+      period: "2023~2025"
+      degree_from: South China University of Technology
+      note: "-> Tencent."
+    - name: Yuehong Hu
+      period: "2023~2025"
+      degree_from: Central South University
+      note: "-> Tencent."
+    - name: Yanchen Zhu
+      period: "2023~2025"
+      degree_from: South China University of Technology
+      note: "PhD student, Hong Kong University of Science and Technology (Guangzhou)."
+    - name: Sicong Lai
+      period: "2023~2025"
+      degree_from: Guangzhou University
+    - name: Xin Zuo
+      period: "2023~2025"
+      degree_from: East China Normal University
+      note: "-> Alibaba Cloud."
+    - name: Gefeng Luo
+      period: "2023~2025"
+      degree_from: Tongji University
+    - name: Yuqian Wang
+      period: "2023~2025"
+      degree_from: "Chang'an University"
+  research_intern:
+    - name: Zepu Wang
+      link: "https://scholar.google.com/citations?user=o40_p5sAAAAJ&hl=zh-CN"
+      period: "2024~2025"
+      affiliation: "PhD student, University of Washington"
+    - name: Yuanshao Zhu
+      link: "https://github.com/YasoZ"
+      period: "2023~2025"
+      affiliation: "PhD student, Southern University of Science and Technology & City University of Hong Kong"
+    - name: Qingren Yao
+      link: "https://scholar.google.com.au/citations?user=NYMYQ5cAAAAJ"
+      period: "2024"
+      affiliation: "Master student, Tianjin University"
+      note: "-> PhD Student, Griffith University."
+    - name: Bowen Zhang
+      link: "https://github.com/jiabooo"
+      period: "2024"
+      affiliation: "Undergraduate student, South China University of Technology"
+      note: "-> PhD student, Chinese University of Hong Kong."
+    - name: Disen Lan
+      link: "https://landisen.github.io/"
+      period: "2023~2024"
+      affiliation: "Undergraduate student, South China University of Technology"
+      note: "-> PhD student, Fudan University & Shanghai AI Lab."
+    - name: Haomin Wen
+      link: "https://wenhaomin.github.io/"
+      period: "2023~2024"
+      affiliation: "PhD student, Beijing Jiaotong University"
+      note: "-> Postdoc, Carnegie Mellon University."
+    - name: Kun Wang
+      link: "https://www.kunwang.net/"
+      period: "2023"
+      affiliation: "PhD student, University of Science and Technology of China"
+      note: "-> Postdoc, Nanyang University of Technology."
+    - name: Guibin Zhang
+      link: "https://guibinz.top/"
+      period: "2023~2024"
+      affiliation: "Undergraduate student, Tongji University"
+      note: "-> PhD student, National University of Singapore."
+    - name: Lilan Peng
+      link: "https://www.researchgate.net/profile/Lilan-Peng-2"
+      period: "2023~2024"
+      affiliation: "PhD student, Southwest Jiaotong University"
+    - name: Kang Luo
+      link: "https://scholar.google.com/citations?user=L5QPKSQAAAAJ&hl=zh-CN"
+      period: "2023~2024"
+      affiliation: "Master student, Zhejiang University"
+    - name: Haodong Chen
+      link: "https://haroldchen19.github.io/"
+      period: "2023~2024"
+      affiliation: "Undergraduate student, Northwestern Polytechnical University"
+    - name: Wentao Zeng
+      period: "2023"
+      affiliation: "Undergraduate student, Northeastern University"
+  research_assistant:
+    - name: Qingren Yao
+      link: "https://github.com/Qingrenn"
+      period: "2024~2025"
+      affiliation: "Master student, Tianjin University"
+      note: "-> PhD student, Griffith University"
+    - name: Jie Zhao
+      link: "https://scholar.google.com/citations?user=cSrV8q4AAAAJ&hl=en"
+      period: "2024"
+      affiliation: "PhD student, Chongqing University"
+      note: "-> Postdoc, Tsinghua University."
+    - name: Huaiwu Zhang
+      link: "https://www.sciencedirect.com/science/article/pii/S2213231723000915"
+      period: "2023～2024"
+      affiliation: "Master student, University of Chinese Academy of Sciences"
+      note: "-> PhD student, University of Helsinki."
+    - name: Yibo Yan
+      link: "https://www.linkedin.com/in/yibo-yan-b41439190/"
+      period: "2023～2024"
+      affiliation: "Master student, National University of Singapore"
+      note: "-> PhD student, Hong Kong University of Science and Technology (Guangzhou)."
+
+outside_collaborators:
+  intro: "Our team is also very lucky to collaborate with the following talented students (in alphabetical order):"
+  list:
+    - name: Haomin Wen
+      link: "https://wenhaomin.github.io/"
+      affiliation: "PhD student, Beijing Jiaotong University"
+      co_supervisor: "Prof. Youfang Lin"
+      co_supervisor_link: "https://scholar.google.com/citations?user=e8xT-e0AAAAJ&hl=en"
+      period: "2022-Present"
+    - name: Junfeng Hu
+      link: "https://scholar.google.com/citations?user=kLMHzqEAAAAJ&hl=en"
+      affiliation: "PhD student, National University of Singapore"
+      co_supervisor: "Prof. Roger Zimmermann"
+      co_supervisor_link: "https://www.comp.nus.edu.sg/cs/people/rogerz/"
+      period: "2021-Present"
+    - name: Kun Wang
+      link: "https://openreview.net/profile?id=~Kun_Wang15"
+      affiliation: "PhD student, University of Science and Technology of China"
+      co_supervisor: "Prof. Yang Wang"
+      co_supervisor_link: "http://staff.ustc.edu.cn/~angyan/"
+      period: "2022-Present"
+    - name: Xu Liu
+      link: "https://scholar.google.co.jp/citations?hl=en&user=JTzLTycAAAAJ"
+      affiliation: "PhD student, National University of Singapore"
+      co_supervisor: "Prof. Roger Zimmermann"
+      co_supervisor_link: "https://www.comp.nus.edu.sg/cs/people/rogerz/"
+      period: "2021-Present"
+    - name: Yoojin An
+      link: "https://www.linkedin.com/in/yoojin-an-254075218/?originalSubdomain=kr"
+      affiliation: "Master, Dongguk University"
+      co_supervisor: "Prof. Jihie Kim"
+      co_supervisor_link: "https://sites.google.com/view/jihiekim"
+      period: "2021-2022"
+    - name: Yutong Xia
+      link: "https://yutong-xia.github.io/"
+      affiliation: "PhD student, National University of Singapore"
+      co_supervisor: "Prof. Roger Zimmermann"
+      co_supervisor_link: "https://www.comp.nus.edu.sg/cs/people/rogerz/"
+      period: "2022-Present"
+
+collaborators:
+  intro: "We are honored to closely work with the following researchers:"
+  logo: /imgs/people/logo.png
