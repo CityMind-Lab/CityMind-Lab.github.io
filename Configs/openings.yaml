@@ -1,0 +1,43 @@
+# Openings page config. Edit this file; the page loads configs/openings.yaml and renders.
+# Use **bold** for bold, [text](url) for links, __text__ for underline.
+
+hero_title: Openings
+hero_background_image: '/imgs/common/学校图-核心区1.jpg'
+
+intro: "We are **offering multiple research positions** in **DM/AI and its applications in spatio-temporal domains**. Positions include PhD, Mphil, Postdoc, RA, and Visiting Scholars."
+
+video:
+  poster: '/imgs/common/学校图.jpg'
+  src: 'https://hkust-gz.edu.cn/imgs/2023/05/KPF_Animation_2020Nov_version_R10_music_1.mp4'
+
+scholarships: "All admitted postgraduate students receive full scholarships (**¥15K/month for PhD, ¥10K/month for MPhil**). RAs receive competitive salaries and project bonuses. Students applying for Fall 2024 can contact us or apply for an RA position first."
+scholarships_link:
+  text: chinese version
+  href: 'https://zhuanlan.zhihu.com/p/621996464'
+
+contact_heading: Contact Info
+contact_email: yuxliang@outlook.com
+contact_apply: "To apply, email your CV (education, publications, internships, etc.), transcripts, and representative papers/projects to {email}. Use the subject format **\"Year-Position-Your Name-Your Affiliation\"** (e.g., \"23Fall-PhD-Jay Chou-THU\")."
+contact_note: "We will evaluate all applications promptly. Due to high email volume, we may not respond to every inquiry. **If you pass the resume screening, you will receive an email for an interview**. If you do not receive any reply within one month, you will not enter the next round. If you remain strongly interested, you may email us again after one month. Thank you for your patience."
+
+phd_heading: PhD Applications
+phd_heading_id: phd-applications-link
+mphil_link:
+  text: Redbird Mphil class
+  href: 'https://hkust-gz.edu.cn/academics/teaching-and-learning-innovation/red-bird-mphil-program/'
+phd_intro: "PhD student requirements are listed below. For MPhil students, please contact me and sign up for the {mphil_link}, choosing a academic supervisor after 6 months. For Postdoc/RA/Intern applications, we will schedule online meetings individually."
+
+requirements_general:
+  - "We prioritize individuals with **CS and DS backgrounds** but also welcome excellent students in GIS and transportation."
+  - "Applicants should have a strong interest in **AI** and **DS** research, independent thinking, and a desire to produce influential results."
+  - "Strong **math** and **programming** skills, **Linux** experience, and a **willingness to learn** are essential."
+  - "A spirit of **scientific research**, **openness**, and **collaboration** is crucial."
+  - "**Good English writing skills** are required, meeting the English admissions requirements of HKUST."
+
+requirements_priority_intro: "Applicants must meet at least one of the following requirements. Priority will be given to those who meet multiple requirements:"
+
+requirements_priority:
+  - "Have **relevant research** or **project experience** in **DM** and **AI**, with publications in **top conferences** or **journals** as the primary author (__at least one first-author CCF-A paper required__)."
+  - "Have **internship** experience in industry or a research institution, with a **deep and systematic understanding of AI/DM applications** and **outstanding achievements** during the internship."
+  - "Have **achieved top levels** in competitions such as ACM ICPC, MCM/ICM, KDD Cup, or Kaggle."
+  - "Have extensive experience as a **full-stack engineer**."
