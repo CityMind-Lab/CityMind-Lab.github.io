@@ -1,0 +1,240 @@
+# Dataset detail pages. Order defines prev/next. Content is Markdown.
+# Schema: id (URL ?name=id), title, date, lastUpdated, image, summary, content
+
+- id: largest
+  title: LargeST
+  date: "2023-09-23"
+  lastUpdated: "2024-01-20"
+  image: /imgs/datasets/largest.jpg
+  summary: A Benchmark Dataset for Large-Scale Traffic Forecasting.
+  content: |
+    This is the official repository of our manuscript [LargeST: A Benchmark Dataset for Large-Scale Traffic Forecasting](https://arxiv.org/pdf/2306.08259.pdf). LargeST comprises four sub-datasets, each characterized by a different number of sensors. The biggest one is California (CA), including a total number of 8,600 sensors. We also construct three subsets of CA by selecting three representative areas within CA and forming the sub-datasets of Greater Los Angeles (GLA), Greater Bay Area (GBA), and San Diego (SD). The figure here shows an illustration.
+
+    ![Overview](https://github.com/liuxu77/LargeST/raw/main/img/overview.png)
+
+    In LargeST we also provide comprehensive metadata for all sensors, which are listed below.
+
+    | Attribute | Description | Possible Range of Values |
+    |-----------|-------------|--------------------------|
+    | ID | The identifier of a sensor in PeMS | 6 to 9 digits number |
+    | Lat | The latitude of a sensor | Real number |
+    | Lng | The longitude of a sensor | Real number |
+    | District | The district of a sensor in PeMS | 3, 4, 5, 6, 7, 8, 10, 11, 12 |
+    | County | The county of a sensor in California | String |
+    | Fwy | The highway where a sensor is located | String starts with 'I', 'US', or 'SR' |
+    | Lane | The number of lanes where a sensor is located | 1, 2, 3, 4, 5, 6, 7, 8 |
+    | Type | The type of a sensor | Mainline |
+    | Direction | The direction of the highway | N, S, E, W |
+
+    ## 1. Data Preparation
+
+    In this section, we will outline the procedure for preparing the CA dataset, followed by an explanation of how the GLA, GBA, and SD datasets can be derived from the CA dataset. Please follow these instructions step by step.
+
+    ### 1.1 Download the CA Dataset
+
+    We host the CA dataset on Kaggle: [https://www.kaggle.com/datasets/liuxu77/largest](https://www.kaggle.com/datasets/liuxu77/largest). There are a total of 7 files in this link. Among them, 5 files in .h5 format contain the traffic flow raw data from 2017 to 2021, 1 file in .csv format provides the metadata for all sensors, and 1 file in .npy format represents the adjacency matrix constructed based on road network distances.
+
+    - **If you are using the web user interface**, you can download all data from the provided [link](https://www.kaggle.com/datasets/liuxu77/largest). The download button is at the upper right corner of the webpage. Then please place the downloaded archive.zip file in the `data/ca` folder and unzip the file.
+    - **If you would like to use the Kaggle API**, please follow the instructions [here](https://github.com/Kaggle/kaggle-api). After setting the API correctly, you can simply go to the `data/ca` folder, and use the command below to download all data.
+
+    ```bash
+    kaggle datasets download liuxu77/largest
+    ```
+
+    Note that the traffic flow raw data of the CA dataset require additional processing (described in Section 1.2 and 1.3), while the metadata and adjacency matrix are ready to be used.
+
+    ### 1.2 Process Traffic Flow Data of CA
+
+    We provide a jupyter notebook `process_ca_his.ipynb` in the folder `data/ca` to process and generate a cleaned version of the flow data. Please go through this notebook.
+
+    ### 1.3 Generate Traffic Flow Data for Training
+
+    Please go to the `data` folder, and use the command below to generate the flow data for model training in our manuscript.
+
+    ```bash
+    python generate_data_for_training.py --dataset ca --years 2019
+    ```
+
+    The processed data are stored in `data/ca/2019`. We also support the utilization of data from multiple years. For example, changing the years argument to 2018_2019 to generate two years of data.
+
+    ### 1.4 Generate Other Sub-Datasets
+
+    We describe the generation of the GLA dataset as an example. Please first go through all the cells in the provided jupyter notebook `generate_gla_dataset.ipynb` in the folder `data/gla`. Then, use the command below to generate traffic flow data for model training.
+
+    ```bash
+    python generate_data_for_training.py --dataset gla --years 2019
+    ```
+
+    ## 2. Experiments Running
+
+    We conduct experiments on an Intel(R) Xeon(R) Gold 6140 CPU @ 2.30 GHz, 376 GB RAM computing server, equipped with an NVIDIA RTX A6000 GPU with 48 GB memory. We adopt PyTorch 1.12 as the default deep learning library. Currently, there are a total of 11 supported baselines in this repository, namely, Historical Last (HL), LSTM, [DCRNN](https://github.com/chnsh/DCRNN_PyTorch), [AGCRN](https://github.com/LeiBAI/AGCRN), [STGCN](https://github.com/hazdzz/STGCN), [GWNET](https://github.com/nnzhan/Graph-WaveNet), [ASTGCN](https://github.com/guoshnBJTU/ASTGCN-r-pytorch), [STGODE](https://github.com/square-coder/STGODE), [DSTAGNN](https://github.com/SYLan2019/DSTAGNN), [DGCRN](https://github.com/tsinghua-fib-lab/Traffic-Benchmark/tree/master/methods/DGCRN), and [D2STGNN](https://github.com/zezhishao/D2STGNN).
+
+    To reproduce the benchmark results in the manuscript, please go to `experiments/baseline_you_want_to_run`, open the provided `run.sh` file, and uncomment the line you would like to execute. Note that you may need to specify the GPU card number on your server. Moreover, we use the flow data from 2019 for model training in our manuscript, if you want to use multiple years of data, please change the years argument to, e.g., 2018_2019.
+
+    To run the LSTM baseline, for example, you may execute this command in the terminal:
+
+    ```bash
+    bash experiments/lstm/run.sh
+    ```
+
+    or directly execute the Python file in the terminal:
+
+    ```bash
+    python experiments/lstm/main.py --device cuda:2 --dataset CA --years 2019 --model_name lstm --seed 2018 --bs 32
+    ```
+
+    ## 3. Evaluate Your Model in Three Steps
+
+    You may first go through the implementations of various baselines in our repository, which may serve as good references for experimenting your own model. The steps are described as follows.
+
+    - The first step is to define the model architecture, and place it into `src/models`. To ensure compatibility with the existing framework, it is recommended that your model inherits the BaseModel class (implemented in `src/base/model.py`).
+    - If your model does not require any special training or testing procedures beyond the standard workflow provided by the BaseEngine class (implemented in `src/base/engine.py`), you can directly use it for training and evaluation. Otherwise, please include a file in the folder `src/engines`.
+    - To integrate your model and engine files, you need to create a `main.py` file in the `experiments/your_model_name` directory.
+
+    ## 4. License & Acknowledgement
+
+    The LargeST benchmark dataset is released under a CC BY-NC 4.0 International License: [https://creativecommons.org/licenses/by-nc/4.0](https://creativecommons.org/licenses/by-nc/4.0). Our code implementation is released under the MIT License: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT). The license of any specific baseline methods used in our codebase should be verified on their official repositories. Here we would also like to express our gratitude to the authors of baselines for releasing their code.
+
+    ## 5. Citation
+
+    If you find our work useful in your research, please cite:
+
+    ```
+    @article{liu2023large,
+      title={LargeST: A Benchmark Dataset for Large-Scale Traffic Forecasting},
+      author={Liu, Xu and Xia, Yutong and Liang, Yuxuan and Hu, Junfeng and Wang, Yiwei and Bai, Lei and Huang, Chao and Liu, Zhenguang and Hooi, Bryan and Zimmermann, Roger},
+      journal={arXiv preprint arXiv:2306.08259},
+      year={2023}
+    }
+    ```
+
+- id: happy-valley
+  title: Happy Valley
+  date: "2023-07-20"
+  lastUpdated: "2025-03-12"
+  image: /imgs/common/happy-valley.jpg
+  summary: Dynamic Public Resource Allocation based on Human Mobility Prediction.
+  content: |
+    [https://github.com/sjruan/malmcs](https://github.com/sjruan/malmcs)
+
+    ## Paper
+
+    If you find our code or dataset useful for your research, please cite our paper:
+
+    Sijie Ruan, Jie Bao, Yuxuan Liang, Ruiyuan Li, Tianfu He, Chuishi Meng, Yanhua Li, Yingcai Wu and Yu Zheng. "Dynamic Public Resource Allocation based on Human Mobility Prediction.", ACM IMWUT/UbiComp 2020.
+
+    ## Requirements
+
+    Python 3.6
+
+    - numpy==1.14.5
+    - networkx==2.2
+    - shapely==1.6.4
+    - pickle
+
+    ## Dataset
+
+    We organize our dataset into two archives, i.e., `MALMCS_data.zip` and `PREDICTION_data.zip`
+
+    1. MALMCS_data.zip
+
+    - `frames_20180101_20181101_24.npy`: this is the hourly crowd flows data in Beijing Happy Valley from 01/01/2018 to 01/11/2018 scraped from the [Tencent Heat Map](https://heat.qq.com/). The last month is used for evaluation, and previous months are used for training & validation.
+    - `pred_all_stresnet_mf4_masked.pkl`: this is the predicted results from the prediction model for evaluation acceleration purpose. In the paper, those results are obtained by training [MF-STN](https://github.com/panzheyi/MF-STN).
+
+    2. PREDICTION_data.zip
+
+    This archive provides some external factors for crowd flow prediction, which can be used to train the crowd flow prediction model together with `frames_20180101_20181101_24.npy`. This dataset is also a data source for [UrbanFM](https://github.com/yoshall/UrbanFM).
+
+    - holiday features: `external/holiday_20180101_20181101_24.npy`
+    - meteorology features: `external/mete_cy_20180101_20181101_24.npy`
+    - ticket price features: `external/price_20180101_20181101_24.npy`
+    - time of day features: `external/tod_20180101_20181101_24.npy`
+
+    ## Usage
+
+    Tunable Parameters
+
+    - Service radius `radius`
+    - Energy limitation `cost_limit`
+    - Number of agents `k`
+
+    `python evaluate.py`
+
+    ## License
+
+    The code and data are released under the MIT License.
+
+- id: lade
+  title: LaDe
+  date: "2023-07-19"
+  lastUpdated: "2025-03-12"
+  image: /imgs/common/lade-1.jpg
+  summary: The First Comprehensive Last-mile Delivery Dataset from Industry.
+  content: |
+    Data Link: [LaDe-P](https://huggingface.co/datasets/Cainiao-AI/LaDe-P) and [LaDe-D](https://huggingface.co/datasets/Cainiao-AI/LaDe-D)  
+    Paper Link: [https://arxiv.org/abs/2306.10675](https://arxiv.org/abs/2306.10675)
+
+    ## 1 Abstract
+
+    Real-world last-mile delivery datasets are crucial for research in logistics, supply chain management, and spatio-temporal data mining. Despite a plethora of algorithms developed to date, no widely accepted, publicly available last-mile delivery dataset exists to support research in this field. In this paper, we introduce LaDe, the first publicly available last-mile delivery dataset with millions of packages from the industry. LaDe has three unique characteristics: (1) Large-scale. It involves 10,677k packages of 21k couriers over 6 months of real-world operation. (2) Comprehensive information. It offers original package information, such as its location and time requirements, as well as task-event information, which records when and where the courier is while events such as task-accept and task-finish events happen. (3) Diversity. The dataset includes data from various scenarios, including package pick-up and delivery, and from multiple cities, each with its unique spatio-temporal patterns due to their distinct characteristics such as populations. We verify LaDe on three tasks by running several classical baseline models per task. We believe that the large-scale, comprehensive, diverse feature of LaDe can offer unparalleled opportunities to researchers in the supply chain community, data mining community, and beyond.
+
+    ### Overview of our work
+
+    ## 2 Dataset Download
+
+    LaDe is composed of two subdatasets: i) [LaDe-D](https://huggingface.co/datasets/Cainiao-AI/LaDe-D), which comes from the package delivery scenario. ii) [LaDe-P](https://huggingface.co/datasets/Cainiao-AI/LaDe-P), which comes from the package pickup scenario. To facilitate the utilization of the dataset, each sub-dataset is presented in CSV format.
+
+    LaDe can be used for research purposes. Before you download the dataset, please read these terms. Then put the data into "/data/raw/". The structure of "/data/raw/" should be like:
+
+    - /data/raw/
+      - delivery
+      - delivery_sh.csv
+      - …
+      - pickup
+      - pickup_sh.csv
+      - …
+
+    Each sub-dataset contains 5 csv files, with each representing the data from a specific city, the detail of each city can be find in the following table.
+
+    | City | Description |
+    |------|-------------|
+    | Shanghai | One of the most prosperous cities in China, with a large number of orders per day. |
+    | Hangzhou | A big city with well-developed online e-commerce and a large number of orders per day. |
+    | Chongqing | A big city with complicated road conditions in China, with a large number of orders. |
+    | Jilin | A middle-size city in China, with a small number of orders each day. |
+    | Yantai | A small city in China, with a small number of orders every day. |
+
+    ## 3 Data Description
+
+    Below is the detailed field of each sub-dataset.
+
+    ### 3.1 LaDe-P
+
+    ### 3.2 LaDe-D
+
+    ## 4 Code
+
+    Code for tasks on Cainiao-LaDe (Last-mile Delivery dataset).
+
+    *route_prediction*: code for route prediction task
+
+    *stg_prediction*: code for spatio-temporal graph forecasting.
+
+    *time_prediction*: code for estimated time of arrival (ETA) prediction.
+
+    For the detailed running instructions of each task, plese see the corresponding readme in its directory.
+
+    ## Cite
+
+    If you find this helpful, please cite our paper:
+
+    ```
+    @misc{wu2023lade,
+      title={LaDe: The First Comprehensive Last-mile Delivery Dataset from Industry},
+      author={Lixia Wu and Haomin Wen and Haoyuan Hu and Xiaowei Mao and Yutong Xia and Ergang Shan and Jianbin Zhen and Junhong Lou and Yuxuan Liang and Liuqing Yang and Roger Zimmermann and Youfang Lin and Huaiyu Wan},
+      year={2023},
+      eprint={2306.10675},
+      archivePrefix={arXiv},
+      primaryClass={cs.DB}
+    }
+    ```

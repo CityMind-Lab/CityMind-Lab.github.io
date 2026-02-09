@@ -1,17 +1,20 @@
 # Datasets list. Edit this file; the page loads it and renders automatically.
-# Schema: title, link (detail page URL), image (path), summary
+# Schema: id (?name= for dataset.html), title, link (detail page URL), image (path), summary
 
-- title: LargeST
-  link: /pages/largest.html
+- id: largest
+  title: LargeST
+  link: /pages/dataset-pages.html?name=largest
   image: /imgs/datasets/largest.jpg
   summary: A Benchmark Dataset for Large-Scale Traffic Forecasting.
 
-- title: Happy Valley
-  link: /pages/happy-valley.html
+- id: happy-valley
+  title: Happy Valley
+  link: /pages/dataset-pages.html?name=happy-valley
   image: /imgs/common/happy-valley.jpg
   summary: Dynamic Public Resource Allocation based on Human Mobility Prediction.
 
-- title: LaDe
-  link: /pages/lade.html
+- id: lade
+  title: LaDe
+  link: /pages/dataset-pages.html?name=lade
   image: /imgs/common/lade-1.jpg
   summary: The First Comprehensive Last-mile Delivery Dataset from Industry.
