@@ -8,25 +8,34 @@
 /* Hero (Members title): no hover background */
 #wp-block-themeisle-blocks-advanced-columns-2c60bc77 .wp-block-themeisle-blocks-advanced-column:hover{background:transparent!important}
 .page-id-61 .entry-content .wp-block-image.is-style-rounded img{border-radius:50%;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-.page-id-61 .entry-content .eb-team-wrapper{border-radius:12px;overflow:visible;box-shadow:none;transition:background .2s ease}
-.page-id-61 .entry-content .eb-team-wrapper:hover{box-shadow:none;background:#f8f9fa}
+.page-id-61 .entry-content .eb-team-wrapper{max-width:100%;border-radius:14px;overflow:visible;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid rgba(0,0,0,.06);transition:background .2s ease,box-shadow .2s ease,border-color .2s ease}
+.page-id-61 .entry-content .eb-team-wrapper:hover{box-shadow:0 4px 12px rgba(0,0,0,.08);background:#fafbfc;border-color:rgba(0,0,0,.08)}
 .page-id-61 .entry-content .eb-team-wrapper:before{display:none}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner{display:grid;grid-template-columns:200px 1fr;grid-template-rows:auto auto auto auto 1fr;gap:0.5rem 2rem;align-items:start;padding:1.5rem}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner{display:grid;grid-template-columns:minmax(0,200px) 1fr;grid-template-rows:auto auto auto auto 1fr;gap:0.75rem 2rem;align-items:start;padding:clamp(1.25rem,4vw,2rem);box-sizing:border-box;max-width:100%}
 .page-id-61 .entry-content .eb-team-wrapper .eb-team-member-contents{display:contents}
 .page-id-61 .entry-content .eb-team-wrapper .eb-team-member-texts{display:contents}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-member-image{grid-column:1;grid-row:1;text-align:left}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-member-image{grid-column:1;grid-row:1;text-align:center}
 .page-id-61 .entry-content .eb-team-wrapper .eb-team-member-image:before{display:none}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-member-image img{margin-top:0!important;margin-bottom:0!important;width:180px;height:180px;object-fit:cover;border-radius:50%}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-name{grid-column:1;grid-row:2;padding-top:0.5rem;margin:0;text-align:left}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-job-title{grid-column:1;grid-row:3;margin:0.25rem 0 0;font-size:1.75rem;font-weight:500;line-height:1.35;text-align:left}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials{grid-column:1;grid-row:4;margin:0.5rem 0 0;padding-left:0;flex-direction:column;align-items:flex-start;gap:0.25rem;list-style:none}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials li{display:flex;align-items:center}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials li::before{content:"• ";margin-right:0.4em;color:#333;font-weight:bold}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials li::after,.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials li:not(:last-child)::after{content:none!important}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-member-image img{margin-top:0!important;margin-bottom:0!important;width:180px;height:180px;max-width:100%;object-fit:cover;border-radius:50%;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-name{grid-column:1;grid-row:2;padding-top:0.5rem;margin:0;text-align:center;font-size:clamp(1.1rem,2.2vw,1.75rem);font-weight:600;color:#444;letter-spacing:-0.01em;line-height:1.35}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-job-title{grid-column:1;grid-row:3;margin:0.35rem 0 0;font-size:clamp(1.1rem,2.2vw,1.75rem);font-weight:500;line-height:1.4;text-align:center;color:#444}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials{grid-column:1;grid-row:4;margin:0.5rem 0 0;padding-left:0;flex-direction:column;align-items:center;gap:0.35rem;list-style:none}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials li{display:flex;align-items:center;margin:0}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials li::before,.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials li::after{content:none!important;display:none!important}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials a{display:inline-flex!important;align-items:center;gap:0.4em;padding:0!important;color:#9ca3af!important;text-decoration:underline!important}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials a:hover{color:#6b7280!important}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials .social-icon-svg{display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;vertical-align:middle}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials .social-icon-svg svg{display:block}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials .social-icon--linkedin{color:#0A66C2}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials .social-icon--scholar{color:#4285F4}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials .social-icon--github{color:#24292f}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials .social-icon--home{color:#0554f2}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials a:hover .social-icon-svg{opacity:.9}
 .page-id-61 .entry-content .eb-team-wrapper .eb-team-inner hr.eb-team-member-content-separator{display:none}
-.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-description{grid-column:2;grid-row:1/-1;text-align:left;margin:0;padding:0}
-@media (max-width:640px){.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner{grid-template-columns:1fr;padding:1rem;justify-items:center}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-name,.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-job-title{text-align:center}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials{align-items:center}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-description{text-align:center}}
-.page-id-61 .entry-content .eb-team-member-description{line-height:1.65}
+.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-description{grid-column:2;grid-row:1/-1;text-align:left;margin:0;padding:0;min-width:0}
+@media (max-width:768px){.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner{grid-template-columns:1fr;gap:0.75rem 0;padding:clamp(1rem,5vw,1.5rem);justify-items:center}.page-id-61 .entry-content .eb-team-wrapper .eb-team-member-image img{width:clamp(100px,32vw,140px);height:clamp(100px,32vw,140px)}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-name,.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-job-title{text-align:center}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-job-title{font-size:1.1rem}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .socials{align-items:center}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-description{text-align:center;grid-column:1}}
+@media (max-width:480px){.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner{padding:1rem}.page-id-61 .entry-content .eb-team-wrapper .eb-team-member-image img{width:110px;height:110px}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-name{font-size:1rem}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-job-title{font-size:0.95rem}.page-id-61 .entry-content .eb-team-wrapper .eb-team-inner .eb-team-member-description{font-size:0.9375rem;line-height:1.6}}
+.page-id-61 .entry-content .eb-team-member-description{line-height:1.7;color:#374151}
 .page-id-61 .entry-content .eb-team-member-contents .socials{margin:0.25em 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:0 0.75rem}
 .page-id-61 .entry-content .eb-team-member-contents .socials li{margin:0;display:inline}
 .page-id-61 .entry-content .eb-team-member-contents .socials li:not(:last-child)::after{content:" · ";color:#999;font-weight:normal}
