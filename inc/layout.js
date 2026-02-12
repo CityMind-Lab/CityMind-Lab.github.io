@@ -1,5 +1,5 @@
 /**
- * Load shared header and footer into #layout-header and #layout-footer.
+ * Load shared header, footer, and head content into pages.
  * Sets current menu item based on location.pathname.
  * Script must be loaded from inc/layout.js (path is derived from script src).
  */
@@ -9,6 +9,15 @@
 	var base = script.src.replace(/\/[^/]*$/, '');
 	var headerEl = document.getElementById('layout-header');
 	var footerEl = document.getElementById('layout-footer');
+
+	// Determine base path for resources based on current page location
+	function getResourceBase() {
+		var path = location.pathname;
+		if (path.indexOf('/pages/') !== -1) {
+			return '../';
+		}
+		return '';
+	}
 
 	function norm(p) {
 		p = (p || '').toLowerCase().replace(/\/?index\.html$/i, '') || '/';
@@ -60,10 +69,36 @@
 		}
 	}
 
+	function injectHead(html) {
+		var head = document.head;
+		var resourceBase = getResourceBase();
+		var processedHtml = html.replace(/\{\{BASE\}\}/g, resourceBase);
+		var wrap = document.createElement('div');
+		wrap.innerHTML = processedHtml.trim();
+		while (wrap.firstChild) {
+			head.appendChild(wrap.firstChild);
+		}
+	}
+
+	function loadHead() {
+		var headPlaceholder = document.getElementById('layout-head');
+		if (!headPlaceholder) return Promise.resolve();
+		return fetch(base + '/head-common.html')
+			.then(function(r) { return r.ok ? r.text() : Promise.reject(); })
+			.then(function(html) {
+				injectHead(html);
+				if (headPlaceholder.parentNode) {
+					headPlaceholder.parentNode.removeChild(headPlaceholder);
+				}
+			})
+			.catch(function() { console.error('Failed to load head-common.html'); });
+	}
+
 	function load() {
 		Promise.all([
 			headerEl ? fetch(base + '/header.html').then(function(r) { return r.ok ? r.text() : Promise.reject(); }) : Promise.resolve(''),
-			footerEl ? fetch(base + '/footer.html').then(function(r) { return r.ok ? r.text() : Promise.reject(); }) : Promise.resolve('')
+			footerEl ? fetch(base + '/footer.html').then(function(r) { return r.ok ? r.text() : Promise.reject(); }) : Promise.resolve(''),
+			loadHead()
 		]).then(function(results) {
 			if (headerEl && results[0]) inject(results[0], headerEl);
 			if (footerEl && results[1]) inject(results[1], footerEl);
