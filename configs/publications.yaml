@@ -39,7 +39,7 @@
   is_journal: true
   categories:
   - stm
-  image: /imgs/publications/2026-KDD-fast-efficient-and-effective.jpg
+  image: /imgs/publications/2026-TPAMI-nuwadynamics-a-causality-aware.jpg
   link: ''
 - title: 'FaST: Efficient and Effective Long-Horizon Forecasting for Large-Scale Spatial-Temporal Graphs via Mixture-of-Experts'
   authors: Yiji Zhao, Zihao Zhong, Ao Wang, Haomin Wen, Ming Jin, Yuxuan Liang, Huaiyu Wan, Hao Wu
