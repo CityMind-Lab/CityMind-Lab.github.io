@@ -3,6 +3,35 @@
 #         is_journal (true=blue venue, false=red), categories (list, see below), image, link? (paper URL, used on title)
 # categories: use at least one of [stm, time-series, multimodal, graph, survey, others]. Papers appear in the matching tab (e.g. stm -> Spatio-Temporal Data Mining). Same year, same category: journals (is_journal: true) are shown first.
 
+- title: 'Efficient High-Dimensional Time Series Forecasting with Transformers: A Channel Reordering Perspective'
+  authors: Yuchen Fang, Shiyu Wang, Yuxuan Liang, Zhou Ye, Yang Xiang, Yan Zhao, Kai Zheng
+  venue: WWW 2026
+  year: 2026
+  is_journal: false
+  categories:
+  - time-series
+  image: /imgs/publications/2026-WWW-channel-reordering.jpg
+  link: ''
+- title: 'AgentSense: LLMs Empower Generalizable and Explainable Web-Based Participatory Urban Sensing'
+  authors: Xusen Guo, Mingxing Peng, Xixuan Hao, Xingchen Zou, Qiongyan Wang, Sijie Ruan, Yuxuan Liang*
+  venue: WWW 2026
+  year: 2026
+  is_journal: false
+  categories:
+  - stm
+  - multimodal
+  image: /imgs/publications/2026-WWW-agentsense.jpg
+  link: ''
+- title: 'Enhancing Ride-Hailing Forecasting at DiDi with Multi-View Geospatial Representation Learning from the Web'
+  authors: Xixuan Hao, Guicheng Li, Daiqiang Wu, Xusen Guo, Yumeng Zhu, Zhichao Zou, Peng Zhen, Yao Yao, Yuxuan Liang*
+  venue: WWW 2026
+  year: 2026
+  is_journal: false
+  categories:
+  - stm
+  - multimodal
+  image: /imgs/publications/2026-WWW-didi-ride-hailing.jpg
+  link: ''
 - title: 'NuwaDynamics+: A Causality-Aware Generative Framework for Spatio-Temporal Representation Learning'
   authors: Kun Wang, Yifan Duan, Hao Wu, Jian Zhao, Kai Wang, Zhengyang Zhou, Yuxuan Liang, Xu Wang*, Yang Wang*, Yu Zheng, Xuelong Li
   venue: TPAMI 2026
